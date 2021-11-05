@@ -115,8 +115,10 @@
 
    对于图2来说，b是修改后的程序，inserted是插入的新语句。源程序是没有inserted的。那么当statement2作为图片一中的covered的节点时，statement2的位置上下文应该选IA（insert after）。
 
-   ==怎么在四个位置上下文选择正确的一个捏==：
+   其中insert的操作是特殊的。原程序中没有inserted，那么c应该是statement2或statement3.然后用c的上下文来匹配更改池里的上下文
 
+   ==怎么在四个位置上下文选择正确的一个捏==：
+   
    利用上下文频率：CCA根据人类手写的补丁对四个位置上下文进行统计，计数较高的位置上下文会被CCA优先选择
    
 2. change selection（更改选择）
