@@ -1,0 +1,8 @@
+
+CombinationPermutation.java:31: warning: The prover cannot establish an assertion (Postcondition: CombinationPermutation.java:29: ) in method select
+		return flag ? combination(n,r) : permutation(r,r);// return flag ? combination(n, r) : permutation(n, r);
+		^
+CombinationPermutation.java:29: warning: Associated declaration: CombinationPermutation.java:31: 
+	  @	ensures \result == fac_spec.spec_factorial(n)/fac_spec.spec_factorial(n-r); |} @*/
+	   	^
+2 warnings

@@ -1,0 +1,13 @@
+StackQueue.java:690: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:636: ) in method driverQueue
+		return output;
+		^
+StackQueue.java:636: warning: Associated declaration: StackQueue.java:690: 
+	   @ 	ensures \result == \old (q.getElem(q.front) / q.getElem(q.front + 1));
+	     	^
+StackQueue.java:690: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:637: ) in method driverQueue
+		return output;
+		^
+StackQueue.java:637: warning: Associated declaration: StackQueue.java:690: 
+	   @ 	ensures q.size() == \old (q.size() - 1);
+	     	^
+4 warnings

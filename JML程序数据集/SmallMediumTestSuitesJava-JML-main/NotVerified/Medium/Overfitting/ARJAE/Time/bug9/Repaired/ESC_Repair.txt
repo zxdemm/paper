@@ -1,0 +1,13 @@
+Time.java:80: warning: The prover cannot establish an assertion (Postcondition: Time.java:73: ) in method setHour
+            return; // throw new IllegalArgumentException();
+            ^
+Time.java:73: warning: Associated declaration: Time.java:80: 
+      @     public exceptional_behavior
+                   ^
+Time.java:80: warning: The prover cannot establish an assertion (Postcondition: Time.java:71: ) in method setHour
+            return; // throw new IllegalArgumentException();
+            ^
+Time.java:71: warning: Associated declaration: Time.java:80: 
+      @  	ensures this.hour == h;
+         	^
+4 warnings

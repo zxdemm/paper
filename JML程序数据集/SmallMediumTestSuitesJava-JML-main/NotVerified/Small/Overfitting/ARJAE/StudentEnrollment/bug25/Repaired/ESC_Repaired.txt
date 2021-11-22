@@ -1,0 +1,50 @@
+
+StudentEnrollment.java:326: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:292: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:292: warning: Associated declaration: StudentEnrollment.java:326: 
+      @      public normal_behavior
+                    ^
+
+StudentEnrollment.java:326: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:292: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:292: warning: Associated declaration: StudentEnrollment.java:326: 
+      @      public normal_behavior
+                    ^
+
+StudentEnrollment.java:326: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:292: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:292: warning: Associated declaration: StudentEnrollment.java:326: 
+      @      public normal_behavior
+                    ^
+
+StudentEnrollment.java:326: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:292: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:292: warning: Associated declaration: StudentEnrollment.java:326: 
+      @      public normal_behavior
+                    ^
+
+StudentEnrollment.java:42: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:33: ) in method setTuitionBalance:  this.tuitionBalance
+  		enroll();
+  		      ^
+StudentEnrollment.java:33: warning: Associated declaration: StudentEnrollment.java:42: 
+      @     public exceptional_behavior
+                   ^
+
+StudentEnrollment.java:45: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:37: ) in method setTuitionBalance
+                throw new IllegalArgumentException();
+                ^
+StudentEnrollment.java:37: warning: Associated declaration: StudentEnrollment.java:45: 
+      @   	signals(IllegalArgumentException) this.tuitionBalance == \old (this.tuitionBalance); @*/
+          	^
+
+StudentEnrollment.java:42: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:33: ) in method setTuitionBalance:  this.tuitionBalance
+  		enroll();
+  		      ^
+StudentEnrollment.java:33: warning: Associated declaration: StudentEnrollment.java:42: 
+      @     public exceptional_behavior
+                   ^
+14 warnings

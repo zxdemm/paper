@@ -1,0 +1,10 @@
+BinarySearch.java:28: warning: The prover cannot establish an assertion (Postcondition: BinarySearch.java:4: ) in method Binary
+                return -1;
+                ^
+BinarySearch.java:4: warning: Associated declaration: BinarySearch.java:28: 
+    //@ ensures \result == -1 <==> (\forall int i; 0 <= i && i < arr.length; arr[i] != key);
+        ^
+BinarySearch.java:17: warning: The prover cannot establish an assertion (LoopInvariant) in method Binary
+            //@ maintaining (\forall int i; high <= i && i < arr.length; key < arr[i]);
+                ^
+3 warnings

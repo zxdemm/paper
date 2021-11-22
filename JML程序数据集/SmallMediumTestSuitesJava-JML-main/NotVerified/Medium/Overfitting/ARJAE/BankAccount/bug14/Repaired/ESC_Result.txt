@@ -1,0 +1,40 @@
+BankAccount.java:105: warning: The prover cannot establish an assertion (Precondition: BankAccount.java:83: ) in method deposit
+		if (!isValid(previousTransaction,amount)) { // if (!isValid(amount)) {//if (isValid(amount)) {
+		            ^
+BankAccount.java:83: warning: Associated declaration: BankAccount.java:105: 
+	/*@ spec_public pure @*/ boolean isValid(int _balance, int _amount)
+	                                 ^
+BankAccount.java:73: warning: Precondition conjunct is false: 0 <= _balance
+	//@ requires 0 <= _balance;
+	               ^
+BankAccount.java:103: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:95: ) in method deposit
+	void deposit(int amount)
+	     ^
+BankAccount.java:95: warning: Associated declaration: BankAccount.java:103: 
+	//@ ensures balance == \old (balance) + amount;
+	    ^
+
+
+BankAccount.java:497: warning: The prover cannot establish an assertion (Precondition: BankAccount.java:103: ) in method menu
+  deposit(amount);
+         ^
+BankAccount.java:103: warning: Associated declaration: BankAccount.java:497: 
+	void deposit(int amount)
+	     ^
+BankAccount.java:93: warning: Precondition conjunct is false: amount + balance <= Integer.MAX_VALUE
+	//@ requires amount + balance <= Integer.MAX_VALUE;
+	                              ^
+BankAccount.java:100: warning: Precondition conjunct is false: !isValid(amount)
+	//@ requires !isValid(amount);
+	             ^
+
+
+
+
+BankAccount.java:578: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:365: ) in method menu
+	        return result;
+	        ^
+BankAccount.java:365: warning: Associated declaration: BankAccount.java:578: 
+	  	ensures balance == \old (balance) + amount;
+	  	^
+11 warnings

@@ -1,0 +1,7 @@
+FindInArray.java:55: error: Loop specifications must immediately precede a loop statement
+	//@ maintaining (\forall int i; index < i && i < arr.length; arr[i] != key);
+	    ^
+FindInArray.java:54: error: Loop specifications must immediately precede a loop statement
+	//@ maintaining -1 <= index && index < arr.length; 
+	    ^
+2 errors

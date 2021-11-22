@@ -1,0 +1,14 @@
+
+Alphabet.java:158: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:157: ) in method getAlphabetic_set:  alphabetic_set
+   {	alphabetic_set=true;
+    	              ^
+Alphabet.java:157: warning: Associated declaration: Alphabet.java:158: 
+   public /*@ pure @*/ boolean getAlphabetic_set()
+              ^
+Alphabet.java:55: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:49: ) in method isAlphabetic
+	return alphabetic;
+	^
+Alphabet.java:49: warning: Associated declaration: Alphabet.java:55: 
+     @   ensures alphabetic_set && \result == alphabetic; 
+         ^
+4 warnings

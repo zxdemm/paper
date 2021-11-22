@@ -1,0 +1,28 @@
+
+BankAccount.java:279: warning: The prover cannot establish an assertion (Assignable: BankAccount.java:251: ) in method withdrawByCashBack:  \everything
+				foreignTransfer(amount);
+				               ^
+BankAccount.java:251: warning: Associated declaration: BankAccount.java:279: 
+	//@ old int _amount = amount - (amount/100)*2;
+	    ^
+
+
+
+
+BankAccount.java:272: warning: The prover cannot establish an assertion (InvariantExit: BankAccount.java:5: ) in method withdrawByCashBack
+	void withdrawByCashBack(int amount) 
+	     ^
+BankAccount.java:5: warning: Associated declaration: BankAccount.java:272: 
+        //@ invariant 0 <= balance;
+            ^
+
+
+
+
+BankAccount.java:272: warning: The prover cannot establish an assertion (Postcondition: BankAccount.java:255: ) in method withdrawByCashBack
+	void withdrawByCashBack(int amount) 
+	     ^
+BankAccount.java:255: warning: Associated declaration: BankAccount.java:272: 
+	//@ ensures balance == \old (balance) - _amount;
+	    ^
+6 warnings

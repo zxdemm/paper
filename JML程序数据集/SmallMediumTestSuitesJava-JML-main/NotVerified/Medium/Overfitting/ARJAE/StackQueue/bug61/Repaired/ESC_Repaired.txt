@@ -1,0 +1,66 @@
+
+
+
+
+StackQueue.java:573: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:335: ) in method driverStack
+            		output = stackPlus(stack);
+            		                  ^
+StackQueue.java:335: warning: Associated declaration: StackQueue.java:573: 
+    	public int stackPlus(Stack stack) 
+    	           ^
+StackQueue.java:328: warning: Precondition conjunct is false: 1 <= stack.top
+    	/*@ requires 1 <= stack.top;
+    	               ^
+
+
+
+
+
+
+StackQueue.java:577: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:348: ) in method driverStack
+            		output = stackMinus(stack);
+            		                   ^
+StackQueue.java:348: warning: Associated declaration: StackQueue.java:577: 
+    	public int stackMinus(Stack stack) 
+    	           ^
+StackQueue.java:341: warning: Precondition conjunct is false: 1 <= stack.getTop()
+    	/*@ requires 1 <= stack.getTop();
+    	               ^
+
+
+
+
+
+
+
+
+StackQueue.java:592: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:522: ) in method driverStack
+		return output;
+		^
+StackQueue.java:522: warning: Associated declaration: StackQueue.java:592: 
+	  @	ensures \result == \old (stack.getElem(stack.top) + stack.getElem(stack.top - 1));
+	   	^
+
+
+
+
+
+
+
+
+StackQueue.java:592: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:523: ) in method driverStack
+		return output;
+		^
+StackQueue.java:523: warning: Associated declaration: StackQueue.java:592: 
+	  @	ensures stack.top == \old (stack.top - 1);
+	   	^
+
+
+
+StackQueue.java:338: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:332: ) in method stackPlus
+		return stack.peek() == 0 ? 1 : 0; //return stack.peek();
+		^
+StackQueue.java:332: warning: Associated declaration: StackQueue.java:338: 
+      	  @ ensures \result == \old (stack.getElem(stack.top) + stack.getElem(stack.top - 1));
+      	    ^
+12 warnings

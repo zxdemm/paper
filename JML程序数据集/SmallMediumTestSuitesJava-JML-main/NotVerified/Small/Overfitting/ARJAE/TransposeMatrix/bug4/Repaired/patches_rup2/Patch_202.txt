@@ -1,0 +1,32 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 29
+Faulty:
+for (int d=0; d <= m; d++) {
+  transpose[c][d]=matrix[d][c];
+}
+Seed:
+m=matrix.length;
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 30
+Faulty:
+transpose[c][d]=matrix[d][c];
+Seed:
+if (!(d < transpose[c].length && c < transpose.length && c < matrix[d].length && d < matrix.length)) break;
+**************************************************
+3 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 14
+Faulty:
+m=matrix.length;
+Seed:
+n=matrix[0].length;
+**************************************************
+4 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 25
+Faulty:
+for (int c=0; c < n; c++) {
+  for (int d=0; d <= m; d++) {
+    transpose[c][d]=matrix[d][c];
+  }
+}
+Seed:
+n=matrix[0].length;
+**************************************************
+Evaluations: 317
+EstimatedTime: 76344

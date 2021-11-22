@@ -1,0 +1,47 @@
+
+
+
+Time.java:114: warning: The prover cannot establish an assertion (Assignable: Time.java:112: ) in method convertToSeconds:  hour
+    {	reset();
+     	     ^
+Time.java:112: warning: Associated declaration: Time.java:114: 
+    //@ ensures \result == hour*60*60 + minute*60 + second;
+        ^
+
+
+Time.java:114: warning: The prover cannot establish an assertion (Assignable: Time.java:112: ) in method convertToSeconds:  minute
+    {	reset();
+     	     ^
+Time.java:112: warning: Associated declaration: Time.java:114: 
+    //@ ensures \result == hour*60*60 + minute*60 + second;
+        ^
+
+Time.java:114: warning: The prover cannot establish an assertion (Assignable: Time.java:112: ) in method convertToSeconds:  second
+    {	reset();
+     	     ^
+Time.java:112: warning: Associated declaration: Time.java:114: 
+    //@ ensures \result == hour*60*60 + minute*60 + second;
+        ^
+
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (Postcondition: Time.java:123: ) in method decr
+    public void decr()
+                ^
+Time.java:123: warning: Associated declaration: Time.java:124: 
+    //@   	ensures convertToSeconds() == \old(convertToSeconds() - 1);
+          	^
+
+
+
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (InvariantExit: Time.java:8: ) in method decr
+    public void decr()
+                ^
+Time.java:8: warning: Associated declaration: Time.java:124: 
+      public invariant 0 <= hour && hour < 24; @*/
+             ^
+10 warnings

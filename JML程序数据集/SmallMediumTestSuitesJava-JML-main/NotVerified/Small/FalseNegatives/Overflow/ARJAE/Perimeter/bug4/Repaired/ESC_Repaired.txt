@@ -1,0 +1,10 @@
+PerimeterDriver.java:32: warning: The prover cannot establish an assertion (Precondition: Perimeter.java:29: ) in method driver
+		result=p.Perimeter(w,x);
+		                  ^
+Perimeter.java:29: warning: Associated declaration: PerimeterDriver.java:32: 
+    /*@ pure @*/ long Perimeter(int x, int y)
+                      ^
+Perimeter.java:27: warning: Precondition conjunct is false: 2 * x + 2 * y <= Integer.MAX_VALUE
+    //@ requires 0 < x && 0 < y && 2*x + 2*y <= Integer.MAX_VALUE;
+                                             ^
+3 warnings

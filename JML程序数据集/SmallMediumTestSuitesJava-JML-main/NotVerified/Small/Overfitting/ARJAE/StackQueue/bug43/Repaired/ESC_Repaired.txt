@@ -1,0 +1,16 @@
+StackQueue.java:264: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method isContain:  underflow in int difference
+            		index--; //index++;
+            		     ^
+StackQueue.java:252: warning: The prover cannot establish an assertion (LoopInvariant) in method isContain
+        		//@ maintaining 0 <= index && index <= rear;
+        		    ^
+StackQueue.java:256: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:327: ) in method isContain
+  					if (key == getElem(index)) {
+  					                  ^
+StackQueue.java:327: warning: Associated declaration: StackQueue.java:256: 
+    		public /*@ pure @*/ int getElem(int i) 
+    		                        ^
+StackQueue.java:325: warning: Precondition conjunct is false: i < rear
+    		//@   requires 0 <= i && i < rear;
+    		                           ^
+5 warnings

@@ -1,0 +1,40 @@
+LCM.java:49: warning: The prover cannot establish an assertion (Precondition: LCM.java:6: ) in method lcm
+	if (div(result, num1) == 0 && div(result, num2) == 0) {
+	       ^
+LCM.java:6: warning: Associated declaration: LCM.java:49: 
+    public static int div(int n, int d) { return n%d; }
+                      ^
+LCM.java:3: warning: Precondition conjunct is false: d != 0
+      @    requires d != 0;
+                      ^
+LCM.java:45: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method lcm:  (int negation)
+	    if (num1 < 0) num1=-num1;
+	                       ^
+LCM.java:37: warning: The prover cannot establish an assertion (LoopInvariant) in method lcm
+	//@ maintaining (\forall int k; check <= k && k < result; div(k, num1) == 0 ==> div(k, num2) != 0);
+	    ^
+LCM.java:36: warning: The prover cannot establish an assertion (LoopInvariant) in method lcm
+	//@ maintaining num1 <= result && num2 <= result && result <= Integer.MAX_VALUE;
+	    ^
+LCM.java:52: warning: The prover cannot establish an assertion (Postcondition: LCM.java:18: ) in method lcm
+	return -1; //  return 0; // -1;
+	^
+LCM.java:18: warning: Associated declaration: LCM.java:52: 
+      @    ensures \result == -1 ==> (\forall int k; max <= k && k <= Integer.MAX_VALUE; div(k, pNum1) == 0 ==> div(k, pNum2) != 0); 
+           ^
+LCM.java:41: warning: The prover cannot establish an assertion (Precondition: LCM.java:6: ) in method lcm
+            if (div(result, num1) == 0 && div(result, num2) == 0)
+                   ^
+LCM.java:6: warning: Associated declaration: LCM.java:41: 
+    public static int div(int n, int d) { return n%d; }
+                      ^
+LCM.java:3: warning: Precondition conjunct is false: d != 0
+      @    requires d != 0;
+                      ^
+LCM.java:50: warning: The prover cannot establish an assertion (Postcondition: LCM.java:17: ) in method lcm
+		return result;
+		^
+LCM.java:17: warning: Associated declaration: LCM.java:50: 
+      @    ensures 0 < \result ==> (\forall int i; max <= i && i < \result; div(i, pNum1) == 0 ==> div(i, pNum2) != 0);
+           ^
+13 warnings

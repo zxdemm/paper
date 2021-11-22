@@ -1,0 +1,18 @@
+
+
+Alphabet.java:100: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:92: ) in method setVowel:  uppercase
+	uppercase=('A' <= c && c <= 'Z');
+	         ^
+Alphabet.java:92: warning: Associated declaration: Alphabet.java:100: 
+     @   assignable vowel_set, vowel;
+         ^
+
+
+
+Alphabet.java:97: warning: The prover cannot establish an assertion (InvariantExit: Alphabet.java:4: ) in method setVowel
+   private /*@ spec_public @*/ void setVowel() 
+                                    ^
+Alphabet.java:4: warning: Associated declaration: Alphabet.java:97: 
+   /*@ private invariant vowel_set ==> 
+               ^
+4 warnings

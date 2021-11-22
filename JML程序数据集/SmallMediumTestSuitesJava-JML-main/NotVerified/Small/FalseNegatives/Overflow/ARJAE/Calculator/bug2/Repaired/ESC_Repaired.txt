@@ -1,0 +1,7 @@
+Calculator.java:36: warning: The prover cannot establish an assertion (PossiblyDivideByZero) in method calculate
+	output=num1 / num2;
+	            ^
+Calculator.java:36: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method calculate:  overflow in int divide
+	output=num1 / num2;
+	            ^
+2 warnings

@@ -1,0 +1,54 @@
+StudentEnrollment.java:117: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:114: ) in method getLateRegistrations
+        return registrationPermission(); // return this.lateRegistration;
+        ^
+StudentEnrollment.java:114: warning: Associated declaration: StudentEnrollment.java:117: 
+    //@   ensures \result == this.lateRegistration;
+          ^
+
+StudentEnrollment.java:185: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:177: ) in method lateEnrollment:  tuitionBalance
+        	tuitionBalance = getTuition() + cost;
+        	               ^
+StudentEnrollment.java:177: warning: Associated declaration: StudentEnrollment.java:185: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:179: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:175: ) in method lateEnrollment
+    public void lateEnrollment() 
+                ^
+StudentEnrollment.java:175: warning: Associated declaration: StudentEnrollment.java:179: 
+      @      public exceptional_behavior
+                    ^
+
+StudentEnrollment.java:179: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method lateEnrollment
+    public void lateEnrollment() 
+                ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:179: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+
+StudentEnrollment.java:44: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:35: ) in method setTuitionBalance:  this.tuitionBalance
+		this.tuitionBalance = tuitionBalance;
+		                    ^
+StudentEnrollment.java:35: warning: Associated declaration: StudentEnrollment.java:44: 
+      @ 	assignable \nothing;
+        	^
+StudentEnrollment.java:40: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method setTuitionBalance:  overflow in int sum
+	int maxTuitionBalance=maxSemesterCredits * costPerCredit + passedCredits * ((costPerCredit / 100) * 6); // int maxTuitionBalance = maxSemesterCredits * costPerCredit + maxSemesterCredits * ((costPerCredit/100)*6);
+	                                                         ^
+StudentEnrollment.java:40: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method setTuitionBalance:  int multiply overflow
+	int maxTuitionBalance=maxSemesterCredits * costPerCredit + passedCredits * ((costPerCredit / 100) * 6); // int maxTuitionBalance = maxSemesterCredits * costPerCredit + maxSemesterCredits * ((costPerCredit/100)*6);
+	                                                                         ^
+StudentEnrollment.java:42: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:28: ) in method setTuitionBalance
+                throw new IllegalArgumentException();
+                ^
+StudentEnrollment.java:28: warning: Associated declaration: StudentEnrollment.java:42: 
+    /*@     public normal_behavior
+                   ^
+
+StudentEnrollment.java:38: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method setTuitionBalance
+    public void setTuitionBalance(int tuitionBalance)
+                ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:38: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+16 warnings

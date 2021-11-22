@@ -1,0 +1,19 @@
+FIND_IN_SORTED.java:16: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method binsearch:  overflow in int sum
+        int mid = start + (end + start) / 2; // int mid = start + (end - start) / 2;
+                               ^
+FIND_IN_SORTED.java:17: warning: The prover cannot establish an assertion (PossiblyTooLargeIndex) in method binsearch
+        if (x < arr[mid]) {
+                   ^
+FIND_IN_SORTED.java:24: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:8: ) in method binsearch
+            return mid;
+            ^
+FIND_IN_SORTED.java:8: warning: Associated declaration: FIND_IN_SORTED.java:24: 
+      @ ensures \result < end;
+        ^
+FIND_IN_SORTED.java:21: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:10: ) in method binsearch
+		return -1;
+		^
+FIND_IN_SORTED.java:10: warning: Associated declaration: FIND_IN_SORTED.java:21: 
+      @ ensures \result == -1 ==> (\forall int i; start <= i && i < end; arr[i] != x); @*/
+        ^
+6 warnings

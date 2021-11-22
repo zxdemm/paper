@@ -1,0 +1,13 @@
+StudentEnrollment.java:320: warning: The prover cannot establish an assertion (Precondition: StudentEnrollment.java:246: ) in method enrollmentProcess
+     {	payTuitionWithCreditCard(payment);
+      	                        ^
+StudentEnrollment.java:246: warning: Associated declaration: StudentEnrollment.java:320: 
+    private /*@ spec_public @*/ void payTuitionWithCreditCard(int payment) 
+                                     ^
+StudentEnrollment.java:236: warning: Precondition conjunct is false: Integer.MIN_VALUE <= tuitionBalance - _payment
+      @   	requires Integer.MIN_VALUE <= tuitionBalance - _payment;
+          	                           ^
+StudentEnrollment.java:243: warning: Precondition conjunct is false: !validPayment(_payment)
+      @   	requires !validPayment(_payment);
+          	         ^
+4 warnings

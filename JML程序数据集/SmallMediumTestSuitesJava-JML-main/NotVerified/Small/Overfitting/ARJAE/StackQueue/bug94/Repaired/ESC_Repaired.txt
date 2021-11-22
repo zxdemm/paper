@@ -1,0 +1,24 @@
+StackQueue.java:746: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:426: ) in method driverQStack
+			output=QModulus(q); // output = sq.stackDivideQ(q, stack);
+			               ^
+StackQueue.java:426: warning: Associated declaration: StackQueue.java:746: 
+        public int QModulus(Queue Q) 
+                   ^
+StackQueue.java:419: warning: Precondition conjunct is false: Q.getElem(Q.front + 1) != 0
+    	/*@ requires 2 <= Q.rear && Q.getElem(Q.front + 1) != 0;
+    	                                                   ^
+
+
+StackQueue.java:757: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:713: ) in method driverQStack
+		return output;
+		^
+StackQueue.java:713: warning: Associated declaration: StackQueue.java:757: 
+	  @ 	ensures \result == stack.peek() / q.peek();
+	    	^
+StackQueue.java:473: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:469: ) in method stackDivideQ
+		return  (stack.peek()/Q.peek()) == 0 ? 1 : 0; //return  stack.peek()/Q.peek();
+		^
+StackQueue.java:469: warning: Associated declaration: StackQueue.java:473: 
+      	  @ ensures \result == stack.peek() / Q.peek();
+      	    ^
+7 warnings

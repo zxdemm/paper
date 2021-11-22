@@ -1,0 +1,43 @@
+
+
+Time.java:226: warning: The prover cannot establish an assertion (Assignable: Time.java:215: ) in method trustedDifference:  minute
+  		start.reset();
+  		           ^
+Time.java:215: warning: Associated declaration: Time.java:226: 
+    //@ requires stop.later_than(start) || stop.equals(start);		
+        ^
+
+Time.java:226: warning: The prover cannot establish an assertion (Assignable: Time.java:215: ) in method trustedDifference:  second
+  		start.reset();
+  		           ^
+Time.java:215: warning: Associated declaration: Time.java:226: 
+    //@ requires stop.later_than(start) || stop.equals(start);		
+        ^
+
+
+
+Time.java:226: warning: The prover cannot establish an assertion (Assignable: Time.java:215: ) in method trustedDifference:  hour
+  		start.reset();
+  		           ^
+Time.java:215: warning: Associated declaration: Time.java:226: 
+    //@ requires stop.later_than(start) || stop.equals(start);		
+        ^
+
+
+
+Time.java:248: warning: The prover cannot establish an assertion (Postcondition: Time.java:222: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:222: warning: Associated declaration: Time.java:248: 
+    //@ ensures diff_minutes == \result.minute;
+        ^
+
+
+
+Time.java:248: warning: The prover cannot establish an assertion (Postcondition: Time.java:221: ) in method trustedDifference
+        return(diff);
+        ^
+Time.java:221: warning: Associated declaration: Time.java:248: 
+    //@ ensures diff_hours == \result.hour;
+        ^
+10 warnings

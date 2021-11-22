@@ -1,0 +1,21 @@
+
+
+StackQueue.java:735: warning: The prover cannot establish an assertion (PossiblyDivideByZero) in method driverQStack
+			stack.push(stack.pop() / stack.pop());
+			                       ^
+
+
+StackQueue.java:735: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method driverQStack:  overflow in int divide
+			stack.push(stack.pop() / stack.pop());
+			                       ^
+
+
+
+
+StackQueue.java:758: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:696: ) in method driverQStack
+		return output; // return output == 0 ? 1 : 0; //return output;
+		^
+StackQueue.java:696: warning: Associated declaration: StackQueue.java:758: 
+	  @ 	ensures \result == q.peek() + stack.peek();
+	    	^
+4 warnings

@@ -1,0 +1,10 @@
+StackQueue.java:132: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:150: ) in method isContain
+        		    if (key == getElem(index)) {
+        		                      ^
+StackQueue.java:150: warning: Associated declaration: StackQueue.java:132: 
+    	   	public /*@ pure @*/ int getElem(int i) 
+    	   	                        ^
+StackQueue.java:148: warning: Precondition conjunct is false: 0 <= i
+    	   	//@ 	requires 0 <= i && i <= top;
+    	   	    	           ^
+3 warnings

@@ -1,0 +1,31 @@
+FindInArray.java:54: warning: The prover cannot establish an assertion (Precondition: FindInArray.java:38: ) in method findLast
+	if (getArr(index) == getKey()) return index;
+	          ^
+FindInArray.java:38: warning: Associated declaration: FindInArray.java:54: 
+    /*@ pure @*/ int getArr(int i) 
+                     ^
+FindInArray.java:36: warning: Precondition conjunct is false: 0 <= i
+    //@ requires 0 <= i && i < arr.length;
+                   ^
+FindInArray.java:55: warning: The prover cannot establish an assertion (LoopInvariant) in method findLast
+	//@ maintaining -1 <= index && index < arr.length; 
+	    ^
+FindInArray.java:63: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method findLast:  underflow in int difference
+		index--;
+		     ^
+FindInArray.java:60: warning: The prover cannot establish an assertion (Precondition: FindInArray.java:38: ) in method findLast
+  				if (getArr(index) == getKey())   return (index == 0 ? 1 : 0);
+  				          ^
+FindInArray.java:38: warning: Associated declaration: FindInArray.java:60: 
+    /*@ pure @*/ int getArr(int i) 
+                     ^
+FindInArray.java:36: warning: Precondition conjunct is false: i < arr.length
+    //@ requires 0 <= i && i < arr.length;
+                             ^
+FindInArray.java:60: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:49: ) in method findLast
+  				if (getArr(index) == getKey())   return (index == 0 ? 1 : 0);
+  				                                 ^
+FindInArray.java:49: warning: Associated declaration: FindInArray.java:60: 
+    /*@ ensures 0 <= \result && \result < arr.length ==> (arr[\result] == key && 
+        ^
+10 warnings

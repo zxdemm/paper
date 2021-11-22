@@ -1,0 +1,37 @@
+GCD.java:54: warning: The prover cannot establish an assertion (UndefinedCalledMethodPrecondition: GCD.java:6: ) in method gcd
+		//@ assume div(num1, result) == 0 && div(num2, result) == 0;
+		              ^
+GCD.java:6: warning: Associated declaration: GCD.java:54: 
+        public static int div(int n, int d) { 
+                          ^
+GCD.java:3: warning: Precondition conjunct is false: d != 0
+          @    requires d != 0;
+                          ^
+GCD.java:48: warning: The prover cannot establish an assertion (Precondition: GCD.java:6: ) in method gcd
+  			if (div(num1,i) == 0 && div(num2,i) == 0) {
+  			       ^
+GCD.java:6: warning: Associated declaration: GCD.java:48: 
+        public static int div(int n, int d) { 
+                          ^
+GCD.java:3: warning: Precondition conjunct is false: d != 0
+          @    requires d != 0;
+                          ^
+GCD.java:75: warning: The prover cannot establish an assertion (Postcondition: GCD.java:26: ) in method gcd
+		return result;
+		^
+GCD.java:26: warning: Associated declaration: GCD.java:75: 
+	  @    ensures \result > 0;
+	       ^
+GCD.java:75: warning: The prover cannot establish an assertion (Postcondition: GCD.java:27: ) in method gcd
+		return result;
+		^
+GCD.java:27: warning: Associated declaration: GCD.java:75: 
+	  @    ensures div(tnum1,\result) == 0;
+	       ^
+GCD.java:75: warning: The prover cannot establish an assertion (Postcondition: GCD.java:29: ) in method gcd
+		return result;
+		^
+GCD.java:29: warning: Associated declaration: GCD.java:75: 
+	  @    ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
+	       ^
+12 warnings

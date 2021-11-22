@@ -1,0 +1,8 @@
+
+FindInArray.java:79: warning: The prover cannot establish an assertion (Assignable: FindInArray.java:78: ) in method isMoreThanOneKey:  this.key
+	this.key=key;
+	        ^
+FindInArray.java:78: warning: Associated declaration: FindInArray.java:79: 
+    /*@ pure @*/ boolean isMoreThanOneKey() {
+        ^
+2 warnings

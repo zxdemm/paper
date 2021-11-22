@@ -1,0 +1,46 @@
+Time.java:214: warning: The prover cannot establish an assertion (ExceptionalPostcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: ) in method equals
+        Time t=new Time(this.hour,this.minute,this.second); // Time t = (Time) o;
+               ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: warning: Associated declaration: Time.java:214: 
+      @   public normal_behavior
+                 ^
+Time.java:215: warning: The prover cannot establish an assertion (Postcondition: Time.java:206: ) in method equals
+        return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+Time.java:206: warning: Associated declaration: Time.java:215: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+
+
+
+Time.java:301: warning: The prover cannot establish an assertion (Postcondition: Time.java:273: ) in method timeOptions
+	return getTime();
+	^
+Time.java:273: warning: Associated declaration: Time.java:301: 
+      @		ensures \result.hour == \old (hour) && \result.minute == \old (minute) && \result.second == \old (second);
+       		^
+Time.java:299: warning: The prover cannot establish an assertion (Postcondition: Time.java:268: ) in method timeOptions
+   		return difference(start, stop);
+   		^
+Time.java:268: warning: Associated declaration: Time.java:299: 
+      @		ensures \result.hour == 0 && \result.minute == 0 && \result.second == 0;
+       		^
+
+
+
+Time.java:301: warning: The prover cannot establish an assertion (Postcondition: Time.java:277: ) in method timeOptions
+	return getTime();
+	^
+Time.java:277: warning: Associated declaration: Time.java:301: 
+      @		ensures  start.hour == 0 && start.minute == 0 && start.second == 0;
+       		^
+
+
+
+Time.java:301: warning: The prover cannot establish an assertion (Postcondition: Time.java:281: ) in method timeOptions
+	return getTime();
+	^
+Time.java:281: warning: Associated declaration: Time.java:301: 
+      @		ensures \result.equals(difference(start, stop));
+       		^
+12 warnings

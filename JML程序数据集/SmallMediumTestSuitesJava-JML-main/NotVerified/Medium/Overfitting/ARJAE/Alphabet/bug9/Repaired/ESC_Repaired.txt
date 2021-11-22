@@ -1,0 +1,15 @@
+
+Alphabet.java:187: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:186: ) in method getDigit_set:  digit_set
+   {	digit_set=true;
+    	         ^
+Alphabet.java:186: warning: Associated declaration: Alphabet.java:187: 
+   public /*@ pure @*/ boolean getDigit_set()
+              ^
+
+Alphabet.java:89: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:82: ) in method isDigit
+	return digit;
+	^
+Alphabet.java:82: warning: Associated declaration: Alphabet.java:89: 
+     @   ensures digit_set && \result == digit; 
+         ^
+4 warnings

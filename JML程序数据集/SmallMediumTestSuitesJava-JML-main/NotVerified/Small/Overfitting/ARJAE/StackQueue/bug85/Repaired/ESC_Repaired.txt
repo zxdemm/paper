@@ -1,0 +1,80 @@
+
+
+StackQueue.java:684: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:401: ) in method driverQueue
+			output=QMinus(q);
+			             ^
+StackQueue.java:401: warning: Associated declaration: StackQueue.java:684: 
+    	public int QMinus(Queue Q) 
+    	           ^
+StackQueue.java:396: warning: Precondition conjunct is false: Q.getElem(Q.front) - Q.getElem(Q.front + 1) <= Integer.MAX_VALUE
+      	  @ requires Q.getElem(Q.front) - Q.getElem(Q.front + 1)  <= Integer.MAX_VALUE;
+      	                                                          ^
+
+
+
+
+StackQueue.java:691: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:643: ) in method driverQueue
+		return output;
+		^
+StackQueue.java:643: warning: Associated declaration: StackQueue.java:691: 
+	   @ 	ensures \result == \old (q.getElem(q.front) % q.getElem(q.front + 1));
+	     	^
+
+
+
+
+StackQueue.java:691: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:644: ) in method driverQueue
+		return output;
+		^
+StackQueue.java:644: warning: Associated declaration: StackQueue.java:691: 
+	   @ 	ensures q.size() == \old (q.size() - 1);
+	     	^
+
+
+
+
+StackQueue.java:429: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method QModulus:  overflow in int sum
+		Q.enter(Q.delete() + Q.delete());
+		                   ^
+
+
+
+
+StackQueue.java:429: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method QModulus:  underflow in int sum
+		Q.enter(Q.delete() + Q.delete());
+		                   ^
+
+
+
+
+
+
+
+
+
+
+StackQueue.java:430: warning: The prover cannot establish an assertion (PossiblyDivideByZero) in method QModulus
+		Q.enter(Q.delete() % Q.delete());
+		                   ^
+
+
+
+
+
+
+
+
+
+
+
+
+StackQueue.java:431: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:322: ) in method QModulus
+		return Q.getElem(Q.getRear() + 1); //return Q.getElem(Q.getRear() - 1);
+		                ^
+StackQueue.java:322: warning: Associated declaration: StackQueue.java:431: 
+    		public /*@ pure @*/ int getElem(int i) 
+    		                        ^
+StackQueue.java:320: warning: Precondition conjunct is false: i < rear
+    		//@   requires 0 <= i && i < rear;
+    		                           ^
+13 warnings

@@ -1,0 +1,30 @@
+
+
+StackQueue.java:688: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:641: ) in method driverQueue
+		return output;
+		^
+StackQueue.java:641: warning: Associated declaration: StackQueue.java:688: 
+	   @ 	ensures \result == \old (q.getElem(q.front) % q.getElem(q.front + 1));
+	     	^
+StackQueue.java:681: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:400: ) in method driverQueue
+			output=QMinus(q); // output = QModulus(q);
+			             ^
+StackQueue.java:400: warning: Associated declaration: StackQueue.java:681: 
+    	public int QMinus(Queue Q) 
+    	           ^
+StackQueue.java:394: warning: Precondition conjunct is false: Integer.MIN_VALUE <= Q.getElem(Q.front) - Q.getElem(Q.front + 1)
+      	  @ requires Integer.MIN_VALUE <= Q.getElem(Q.front) - Q.getElem(Q.front + 1);
+      	                               ^
+StackQueue.java:429: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:423: ) in method QModulus
+		return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:423: warning: Associated declaration: StackQueue.java:429: 
+          @ ensures \result == \old (Q.getElem(Q.front) % Q.getElem(Q.front + 1));
+            ^
+StackQueue.java:429: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:424: ) in method QModulus
+		return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:424: warning: Associated declaration: StackQueue.java:429: 
+          @ ensures Q.size() == \old (Q.size() - 1);
+            ^
+9 warnings

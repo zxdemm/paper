@@ -1,0 +1,15 @@
+StackQueue.java:262: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:247: ) in method isContain
+        	return true; //return false;
+        	^
+StackQueue.java:247: warning: Associated declaration: StackQueue.java:262: 
+    		//@   ensures \result ==> \exists int i; 0 <= i && i < rear; queue[i] == key;
+    		      ^
+StackQueue.java:259: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:248: ) in method isContain
+				return false;
+				^
+StackQueue.java:248: warning: Associated declaration: StackQueue.java:259: 
+    		//@   ensures !\result ==> \forall int i; 0 <= i && i < rear; queue[i] != key;
+    		      ^
+error: An error while executing a proof script for stackDivideQ: (error "Solver has unexpectedly terminated")
+1 error
+4 warnings

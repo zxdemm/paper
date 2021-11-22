@@ -1,0 +1,16 @@
+Inverse.java:18: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:2: ) in method Inverse
+        return false; // return true;
+        ^
+Inverse.java:2: warning: Associated declaration: Inverse.java:18: 
+    //@ ensures !\result ==> ((x.length != y.length) || (\exists int i; 0 <= i && i < x.length; x[i] != y[x.length - 1 -i]));
+        ^
+Inverse.java:9: warning: The prover cannot establish an assertion (LoopInvariant) in method Inverse
+        //@ maintaining (\forall int i; 0 <= i && i < index; x[i] == y[x.length -1 - i]);
+            ^
+Inverse.java:13: warning: The prover cannot establish an assertion (Postcondition: Inverse.java:3: ) in method Inverse
+                return true; // return false;
+                ^
+Inverse.java:3: warning: Associated declaration: Inverse.java:13: 
+    //@ ensures \result ==> x.length == y.length && (\forall int i; 0 <= i && i < x.length; x[i] == y[x.length - 1 - i]);
+        ^
+5 warnings

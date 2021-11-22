@@ -1,0 +1,8 @@
+
+StudentEnrollment.java:124: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:122: ) in method getFirstName:  this.firstName
+	this.firstName=firstName;
+	              ^
+StudentEnrollment.java:122: warning: Associated declaration: StudentEnrollment.java:124: 
+    public /*@ pure @*/ String getFirstName()
+               ^
+2 warnings

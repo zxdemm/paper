@@ -1,0 +1,36 @@
+
+Time.java:77: warning: The prover cannot establish an assertion (Postcondition: Time.java:71: ) in method setHour
+    public void setHour(int h) 
+                ^
+Time.java:71: warning: Associated declaration: Time.java:77: 
+      @  	ensures this.hour == h;
+         	^
+
+Time.java:41: warning: The prover cannot establish an assertion (Postcondition: Time.java:35: ) in method setSecond
+    public void setSecond(int s) 
+                ^
+Time.java:35: warning: Associated declaration: Time.java:41: 
+      @     	ensures this.second == s;
+            	^
+
+
+
+
+
+
+Time.java:166: warning: The prover cannot establish an assertion (Assert) in method timer
+	//@ assert hour == h && minute == m && second == s;
+	    ^
+
+
+
+
+
+
+Time.java:160: warning: The prover cannot establish an assertion (Postcondition: Time.java:159: ) in method timer
+    public void timer(int h, int m, int s)
+                ^
+Time.java:159: warning: Associated declaration: Time.java:160: 
+    //@ ensures convertToSeconds() == 0;
+        ^
+7 warnings

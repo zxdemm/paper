@@ -1,0 +1,10 @@
+Factorial.java:14: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method factorial:  long multiply overflow
+  		fact=fact * c;
+  		          ^
+Factorial.java:19: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method factorial
+	  //@ maintaining fact > 0;
+	      ^
+Factorial.java:21: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method factorial
+	  //@ maintaining spec_factorial(c - 1) == fact;
+	      ^
+3 warnings

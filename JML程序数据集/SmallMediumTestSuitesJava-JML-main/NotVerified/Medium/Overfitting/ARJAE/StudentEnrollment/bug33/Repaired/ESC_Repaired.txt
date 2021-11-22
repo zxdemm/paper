@@ -1,0 +1,11 @@
+StudentEnrollment.java:323: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method enrollmentProcess:  underflow in int difference
+  		tuitionBalance-=payment;
+  		              ^
+
+StudentEnrollment.java:95: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:94: ) in method getTuition:  this.tuitionBalance
+    {	this.tuitionBalance=tuitionBalance;
+     	                   ^
+StudentEnrollment.java:94: warning: Associated declaration: StudentEnrollment.java:95: 
+    public /*@ pure @*/ int getTuition() 
+               ^
+3 warnings

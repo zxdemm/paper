@@ -1,0 +1,9 @@
+
+
+StackQueue.java:590: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:543: ) in method driverStack
+		return output;
+		^
+StackQueue.java:543: warning: Associated declaration: StackQueue.java:590: 
+	  @ 	ensures \result == \old (stack.getElem(stack.top) % stack.getElem(stack.top - 1));
+	    	^
+2 warnings

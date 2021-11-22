@@ -1,0 +1,29 @@
+
+StudentEnrollment.java:160: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:156: ) in method regularEnrollment:  this.enrollmentCredits
+	this.enrollmentCredits=enrollmentCredits;
+	                      ^
+StudentEnrollment.java:156: warning: Associated declaration: StudentEnrollment.java:160: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:158: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:154: ) in method regularEnrollment
+    public void regularEnrollment()
+                ^
+StudentEnrollment.java:154: warning: Associated declaration: StudentEnrollment.java:158: 
+      @      public exceptional_behavior
+                    ^
+
+StudentEnrollment.java:160: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:151: ) in method regularEnrollment:  this.enrollmentCredits
+	this.enrollmentCredits=enrollmentCredits;
+	                      ^
+StudentEnrollment.java:151: warning: Associated declaration: StudentEnrollment.java:160: 
+      @   	assignable this.tuitionBalance;
+          	^
+
+StudentEnrollment.java:158: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:152: ) in method regularEnrollment
+    public void regularEnrollment()
+                ^
+StudentEnrollment.java:152: warning: Associated declaration: StudentEnrollment.java:158: 
+      @   	ensures this.tuitionBalance == \old(tuitionBalance + enrollmentCredits * costPerCredit);
+          	^
+8 warnings

@@ -1,0 +1,27 @@
+
+StackQueue.java:268: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:266: ) in method search:  rear
+			front=rear=0;
+			          ^
+StackQueue.java:266: warning: Associated declaration: StackQueue.java:268: 
+    		public /*@ pure @*/ int search(int key)
+    		           ^
+
+
+StackQueue.java:268: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:266: ) in method search:  front
+			front=rear=0;
+			     ^
+StackQueue.java:266: warning: Associated declaration: StackQueue.java:268: 
+    		public /*@ pure @*/ int search(int key)
+    		           ^
+
+
+StackQueue.java:270: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:331: ) in method search
+			if (getElem(index) == key) {
+			           ^
+StackQueue.java:331: warning: Associated declaration: StackQueue.java:270: 
+    		public /*@ pure @*/ int getElem(int i) 
+    		                        ^
+StackQueue.java:329: warning: Precondition conjunct is false: i < rear
+    		//@   requires 0 <= i && i < rear;
+    		                           ^
+7 warnings

@@ -1,0 +1,6 @@
+
+
+PrimeNumbers.java:56: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method primeList:  overflow in int sum
+	     num++;
+	        ^
+1 warning

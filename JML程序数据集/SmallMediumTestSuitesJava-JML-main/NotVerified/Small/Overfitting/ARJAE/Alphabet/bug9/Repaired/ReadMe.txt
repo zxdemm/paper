@@ -1,0 +1,1 @@
+This program is buggy because the "isDigit()" does not change the value of "digit_set," which can be obtained with the "getDigit_set()" method. Thie program is correct if we only use the "driver" method, while these two above methods are public. 

@@ -1,0 +1,7 @@
+StackQueue.java:463: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:458: ) in method qDivideStack
+			return 0;
+			^
+StackQueue.java:458: warning: Associated declaration: StackQueue.java:463: 
+          @ ensures \result == Q.peek() / stack.peek();
+            ^
+error: An error while executing a proof script for QDivision: (error "Solver has unexpectedly terminated")

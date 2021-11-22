@@ -1,0 +1,18 @@
+
+FindInArray.java:68: warning: The prover cannot establish an assertion (Assignable: FindInArray.java:67: ) in method findFirst:  this.key
+	this.key=key;	
+	        ^
+FindInArray.java:67: warning: Associated declaration: FindInArray.java:68: 
+    /*@ pure @*/ int findFirst() {
+        ^
+
+FindInArray.java:76: warning: The prover cannot establish an assertion (Precondition: FindInArray.java:38: ) in method findFirst
+  		if (getArr(index) == getKey())   return index;
+  		          ^
+FindInArray.java:38: warning: Associated declaration: FindInArray.java:76: 
+    /*@ pure @*/ int getArr(int i) 
+                     ^
+FindInArray.java:36: warning: Precondition conjunct is false: 0 <= i
+    //@ requires 0 <= i && i < arr.length;
+                   ^
+5 warnings

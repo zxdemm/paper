@@ -1,0 +1,37 @@
+
+Time.java:255: warning: The prover cannot establish an assertion (Assignable: Time.java:251: ) in method difference:  second
+  		start.reset();
+  		           ^
+Time.java:251: warning: Associated declaration: Time.java:255: 
+    //@    	requires start.later_than(stop) || stop.equals(start);
+           	^
+
+
+Time.java:255: warning: The prover cannot establish an assertion (Assignable: Time.java:251: ) in method difference:  minute
+  		start.reset();
+  		           ^
+Time.java:251: warning: Associated declaration: Time.java:255: 
+    //@    	requires start.later_than(stop) || stop.equals(start);
+           	^
+
+
+
+Time.java:255: warning: The prover cannot establish an assertion (Assignable: Time.java:251: ) in method difference:  hour
+  		start.reset();
+  		           ^
+Time.java:251: warning: Associated declaration: Time.java:255: 
+    //@    	requires start.later_than(stop) || stop.equals(start);
+           	^
+
+
+
+Time.java:252: warning: The prover cannot establish an assertion (UndefinedCalledMethodPrecondition: Time.java:224: ) in method difference
+    //@    	ensures \result.equals(trustedDifference(stop,start));
+           	                                        ^
+Time.java:224: warning: Associated declaration: Time.java:252: 
+    private /*@ spec_public pure @*/ Time trustedDifference(Time start, Time stop) 
+                                          ^
+Time.java:215: warning: Precondition conjunct is false: stop.later_than(start) || stop.equals(start)
+    //@ requires stop.later_than(start) || stop.equals(start);		
+                                        ^
+9 warnings

@@ -1,0 +1,23 @@
+StackQueue.java:216: warning: The prover cannot establish an assertion (UndefinedTooLargeIndex) in method delete
+                			//@ assume queue[i+1] == temp[i+1];
+                			                ^
+
+StackQueue.java:213: warning: The prover cannot establish an assertion (LoopInvariant) in method delete
+              		  	@ maintaining 0 <= i && i < rear;
+              		  	  ^
+
+StackQueue.java:260: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:249: ) in method isContain:  rear
+		front=rear=0;
+		          ^
+StackQueue.java:249: warning: Associated declaration: StackQueue.java:260: 
+    		public /*@ pure @*/ boolean isContain(int key)
+    		           ^
+
+
+StackQueue.java:260: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:249: ) in method isContain:  front
+		front=rear=0;
+		     ^
+StackQueue.java:249: warning: Associated declaration: StackQueue.java:260: 
+    		public /*@ pure @*/ boolean isContain(int key)
+    		           ^
+6 warnings

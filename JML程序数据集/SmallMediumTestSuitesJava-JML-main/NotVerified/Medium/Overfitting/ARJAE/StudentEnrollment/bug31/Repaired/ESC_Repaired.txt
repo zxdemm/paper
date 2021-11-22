@@ -1,0 +1,45 @@
+StudentEnrollment.java:216: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:215: ) in method enroll
+    public void enroll() 
+                ^
+StudentEnrollment.java:215: warning: Associated declaration: StudentEnrollment.java:216: 
+      @   	ensures this.tuitionBalance == \old (tuitionBalance + enrollmentCredits * costPerCredit); @*/
+          	^
+
+
+
+
+
+
+StudentEnrollment.java:352: warning: The prover cannot establish an assertion (Precondition: StudentEnrollment.java:216: ) in method enrollmentProcess
+			enroll();
+			      ^
+StudentEnrollment.java:216: warning: Associated declaration: StudentEnrollment.java:352: 
+    public void enroll() 
+                ^
+StudentEnrollment.java:205: warning: Precondition conjunct is false: registrationPermission()
+      @ 	requires registrationPermission();
+        	                               ^
+StudentEnrollment.java:211: warning: Precondition conjunct is false: !lateRegistration
+      @   	requires !lateRegistration;
+          	         ^
+
+
+
+
+
+
+
+StudentEnrollment.java:331: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:316: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:316: warning: Associated declaration: StudentEnrollment.java:331: 
+      @ 		ensures this.tuitionBalance == initialBalance + enrollmentCredits * costPerCredit;
+        		^
+
+StudentEnrollment.java:45: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:30: ) in method setTuitionBalance:  this.enrollmentCredits
+  			this.enrollmentCredits=enrollmentCredits;
+  			                      ^
+StudentEnrollment.java:30: warning: Associated declaration: StudentEnrollment.java:45: 
+      @         assignable this.tuitionBalance;
+                ^
+10 warnings

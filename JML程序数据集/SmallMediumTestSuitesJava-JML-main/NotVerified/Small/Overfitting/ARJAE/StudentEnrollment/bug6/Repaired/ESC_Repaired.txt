@@ -1,0 +1,79 @@
+
+
+
+StudentEnrollment.java:335: warning: The prover cannot establish an assertion (Precondition: StudentEnrollment.java:274: ) in method enrollmentProcess
+		pay(payment, debit);
+		   ^
+StudentEnrollment.java:274: warning: Associated declaration: StudentEnrollment.java:335: 
+    public void pay(int payment, boolean debit) 
+                ^
+StudentEnrollment.java:260: warning: Precondition conjunct is false: debit
+      @   	requires debit;
+          	         ^
+StudentEnrollment.java:271: warning: Precondition conjunct is false: Integer.MIN_VALUE <= tuitionBalance - _payment
+      @   	requires Integer.MIN_VALUE <= tuitionBalance - _payment;
+          	                           ^
+
+
+
+
+StudentEnrollment.java:320: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:283: ) in method enrollmentProcess
+    public void enrollmentProcess(int passedCredits, int semesterCredits, int payment, int initialBalance, boolean lateRegistration, boolean debit, boolean option) 
+                ^
+StudentEnrollment.java:283: warning: Associated declaration: StudentEnrollment.java:320: 
+    /*@      public exceptional_behavior
+                    ^
+
+StudentEnrollment.java:61: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:56: ) in method setPassedCredits:  this.passedCredits
+            this.passedCredits = passedCredits;
+                               ^
+StudentEnrollment.java:56: warning: Associated declaration: StudentEnrollment.java:61: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:58: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:54: ) in method setPassedCredits
+    public void setPassedCredits(int passedCredits)
+                ^
+StudentEnrollment.java:54: warning: Associated declaration: StudentEnrollment.java:58: 
+      @      public exceptional_behavior
+                    ^
+StudentEnrollment.java:63: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:49: ) in method setPassedCredits
+            throw new IllegalArgumentException();
+            ^
+StudentEnrollment.java:49: warning: Associated declaration: StudentEnrollment.java:63: 
+    /*@      public normal_behavior
+                    ^
+StudentEnrollment.java:40: warning: The prover cannot establish an assertion (Precondition: StudentEnrollment.java:206: ) in method setTuitionBalance
+	enroll();
+	      ^
+StudentEnrollment.java:206: warning: Associated declaration: StudentEnrollment.java:40: 
+    public void enroll() 
+                ^
+StudentEnrollment.java:195: warning: Precondition conjunct is false: registrationPermission()
+      @ 	requires registrationPermission();
+        	                               ^
+StudentEnrollment.java:201: warning: Precondition conjunct is false: !lateRegistration
+      @   	requires !lateRegistration;
+          	         ^
+
+StudentEnrollment.java:40: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:33: ) in method setTuitionBalance:  this.tuitionBalance
+	enroll();
+	      ^
+StudentEnrollment.java:33: warning: Associated declaration: StudentEnrollment.java:40: 
+      @     public exceptional_behavior
+                   ^
+
+StudentEnrollment.java:43: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:37: ) in method setTuitionBalance
+                throw new IllegalArgumentException();
+                ^
+StudentEnrollment.java:37: warning: Associated declaration: StudentEnrollment.java:43: 
+      @   	signals(IllegalArgumentException) this.tuitionBalance == \old (this.tuitionBalance); @*/
+          	^
+
+StudentEnrollment.java:40: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:33: ) in method setTuitionBalance:  this.tuitionBalance
+	enroll();
+	      ^
+StudentEnrollment.java:33: warning: Associated declaration: StudentEnrollment.java:40: 
+      @     public exceptional_behavior
+                   ^
+22 warnings

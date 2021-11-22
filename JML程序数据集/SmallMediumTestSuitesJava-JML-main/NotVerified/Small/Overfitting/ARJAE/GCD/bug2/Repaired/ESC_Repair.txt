@@ -1,0 +1,13 @@
+GCD.java:7: warning: The prover cannot establish an assertion (Postcondition: GCD.java:4: ) in method div
+		return (n % d != 0) ? 1 : 0; // return (n%d == 0) ? 1 : 0; // return n%d; 
+		^
+GCD.java:4: warning: Associated declaration: GCD.java:7: 
+	  @    ensures \result == n%d;
+	       ^
+GCD.java:71: warning: The prover cannot establish an assertion (Postcondition: GCD.java:29: ) in method gcd
+		return result;
+		^
+GCD.java:29: warning: Associated declaration: GCD.java:71: 
+	  @    ensures (\forall int i; \result < i && i <= smaller; div(smaller,i) == 0 ==> div(greater,i) != 0);
+	       ^
+4 warnings

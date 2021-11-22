@@ -1,0 +1,14 @@
+Alphabet.java:229: warning: The prover cannot establish an assertion (InvariantLeaveCaller: Alphabet.java:20: ) in method driver:  (Caller: Alphabet.driver(int), Callee: Alphabet.isLowercase())
+		result[0] = isLowercase();
+		                       ^
+Alphabet.java:20: warning: Associated declaration: Alphabet.java:229: 
+   //@ private invariant lowercase_set ==> (lowercase == ('a' <= c && c <= 'z'));
+               ^
+
+Alphabet.java:78: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:71: ) in method isLowercase
+       return lowercase;
+       ^
+Alphabet.java:71: warning: Associated declaration: Alphabet.java:78: 
+      @   ensures lowercase_set && \result == lowercase; 
+          ^
+4 warnings

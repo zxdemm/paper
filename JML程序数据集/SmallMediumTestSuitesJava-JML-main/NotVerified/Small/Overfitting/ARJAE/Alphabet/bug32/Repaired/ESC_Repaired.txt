@@ -1,0 +1,14 @@
+Alphabet.java:179: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:176: ) in method getUppercase_set
+	return !getVowel_set(); //return !uppercase_set; // return uppercase_set;
+	^
+Alphabet.java:176: warning: Associated declaration: Alphabet.java:179: 
+     @   ensures \result == uppercase_set; @*/
+         ^
+
+Alphabet.java:152: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:136: ) in method setLowercase:  vowel
+  	    vowel=true;
+  	         ^
+Alphabet.java:136: warning: Associated declaration: Alphabet.java:152: 
+     @    assignable lowercase_set, lowercase;
+          ^
+4 warnings

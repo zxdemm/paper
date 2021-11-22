@@ -1,0 +1,10 @@
+
+
+
+Time.java:127: warning: The prover cannot establish an assertion (Postcondition: Time.java:123: ) in method decr
+            return;
+            ^
+Time.java:123: warning: Associated declaration: Time.java:127: 
+    //@   	ensures convertToSeconds() == \old(convertToSeconds() - 1);
+          	^
+2 warnings

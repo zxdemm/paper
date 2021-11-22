@@ -1,0 +1,59 @@
+
+StackQueue.java:473: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:465: ) in method stackDivideQ:  top
+		stack.push(stack.pop() - stack.pop());
+		                    ^
+StackQueue.java:465: warning: Associated declaration: StackQueue.java:473: 
+    	/*@ requires 1 <= Q.rear && 1 <= stack.top;
+    	    ^
+
+
+StackQueue.java:473: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:465: ) in method stackDivideQ:  top
+		stack.push(stack.pop() - stack.pop());
+		                                  ^
+StackQueue.java:465: warning: Associated declaration: StackQueue.java:473: 
+    	/*@ requires 1 <= Q.rear && 1 <= stack.top;
+    	    ^
+
+
+StackQueue.java:473: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method stackDivideQ:  underflow in int difference
+		stack.push(stack.pop() - stack.pop());
+		                       ^
+
+
+StackQueue.java:473: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method stackDivideQ:  overflow in int difference
+		stack.push(stack.pop() - stack.pop());
+		                       ^
+
+
+
+StackQueue.java:473: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:465: ) in method stackDivideQ:  top
+		stack.push(stack.pop() - stack.pop());
+		          ^
+StackQueue.java:465: warning: Associated declaration: StackQueue.java:473: 
+    	/*@ requires 1 <= Q.rear && 1 <= stack.top;
+    	    ^
+
+
+
+
+StackQueue.java:473: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:465: ) in method stackDivideQ:  arr[*]
+		stack.push(stack.pop() - stack.pop());
+		          ^
+StackQueue.java:465: warning: Associated declaration: StackQueue.java:473: 
+    	/*@ requires 1 <= Q.rear && 1 <= stack.top;
+    	    ^
+
+
+
+
+StackQueue.java:474: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method stackDivideQ:  overflow in int divide
+		return  stack.peek()/Q.peek();
+		                    ^
+
+
+
+
+StackQueue.java:474: warning: The prover cannot establish an assertion (PossiblyDivideByZero) in method stackDivideQ
+		return  stack.peek()/Q.peek();
+		                    ^
+12 warnings

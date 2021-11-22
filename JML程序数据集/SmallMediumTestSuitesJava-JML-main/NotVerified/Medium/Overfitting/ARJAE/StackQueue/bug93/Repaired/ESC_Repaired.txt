@@ -1,0 +1,32 @@
+StackQueue.java:747: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:361: ) in method driverQStack
+			output=stackDivision(stack);
+			                    ^
+StackQueue.java:361: warning: Associated declaration: StackQueue.java:747: 
+    	public int stackDivision(Stack stack) 
+    	           ^
+StackQueue.java:354: warning: Precondition conjunct is false: stack.getElem(stack.top - 1) != 0
+      	  @ requires stack.getElem(stack.top - 1) != 0;
+      	                                          ^
+
+
+StackQueue.java:758: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:713: ) in method driverQStack
+		return output;
+		^
+StackQueue.java:713: warning: Associated declaration: StackQueue.java:758: 
+	  @ 	ensures \result == stack.peek() / q.peek();
+	    	^
+
+
+StackQueue.java:713: warning: The prover cannot establish an assertion (UndefinedDivideByZero) in method driverQStack
+	  @ 	ensures \result == stack.peek() / q.peek();
+	    	                                ^
+StackQueue.java:473: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method stackDivideQ:  int multiply overflow
+		return  stack.peek()*Q.peek(); // return  stack.peek()/Q.peek();
+		                    ^
+StackQueue.java:473: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:469: ) in method stackDivideQ
+		return  stack.peek()*Q.peek(); // return  stack.peek()/Q.peek();
+		^
+StackQueue.java:469: warning: Associated declaration: StackQueue.java:473: 
+      	  @ ensures \result == stack.peek() / Q.peek();
+      	    ^
+9 warnings

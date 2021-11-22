@@ -1,0 +1,4 @@
+Inverse.java:7: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method Inverse
+        //@ maintaining 0 <= index && index <= x.length && x.length == y.length;
+            ^
+1 warning

@@ -1,0 +1,15 @@
+
+StudentEnrollment.java:102: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:101: ) in method getEnrollmentCredits:  this.enrollmentCredits
+    {	this.enrollmentCredits=enrollmentCredits;
+     	                      ^
+StudentEnrollment.java:101: warning: Associated declaration: StudentEnrollment.java:102: 
+    public /*@ pure @*/ int getEnrollmentCredits() 
+               ^
+
+StudentEnrollment.java:116: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:115: ) in method getLateRegistrations:  this.lateRegistration
+    {	this.lateRegistration=lateRegistration;
+     	                     ^
+StudentEnrollment.java:115: warning: Associated declaration: StudentEnrollment.java:116: 
+    public /*@ pure @*/ boolean getLateRegistrations() 
+               ^
+4 warnings

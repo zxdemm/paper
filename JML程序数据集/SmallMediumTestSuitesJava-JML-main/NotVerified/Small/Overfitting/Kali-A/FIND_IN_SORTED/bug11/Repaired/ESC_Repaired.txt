@@ -1,0 +1,16 @@
+FIND_IN_SORTED.java:22: warning: The prover cannot establish an assertion (Precondition: FIND_IN_SORTED.java:12: ) in method binsearch
+            return binsearch(arr, x, mid-1, end); //return binsearch(arr, x, mid+1, end);
+                            ^
+FIND_IN_SORTED.java:12: warning: Associated declaration: FIND_IN_SORTED.java:22: 
+    int binsearch(int[] arr, int x, int start, int end) {
+        ^
+FIND_IN_SORTED.java:2: warning: Precondition conjunct is false: 0 <= start
+    /*@ requires 0 <= start && 0 <= end && start <= end && end <= arr.length;
+                   ^
+FIND_IN_SORTED.java:19: warning: The prover cannot establish an assertion (Postcondition: FIND_IN_SORTED.java:10: ) in method binsearch
+		return -1;
+		^
+FIND_IN_SORTED.java:10: warning: Associated declaration: FIND_IN_SORTED.java:19: 
+      @ ensures \result == -1 ==> (\forall int i; start <= i && i < end; arr[i] != x); @*/
+        ^
+5 warnings

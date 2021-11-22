@@ -1,0 +1,14 @@
+Alphabet.java:200: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:197: ) in method getDigit_set
+	return !uppercase_set; // return !digit_set; // return digit_set;
+	^
+Alphabet.java:197: warning: Associated declaration: Alphabet.java:200: 
+     @   ensures \result == digit_set; @*/
+         ^
+
+Alphabet.java:98: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:81: ) in method isDigit:  vowel
+  		   vowel=true;
+  		        ^
+Alphabet.java:81: warning: Associated declaration: Alphabet.java:98: 
+     @   assignable digit_set, digit;
+         ^
+4 warnings

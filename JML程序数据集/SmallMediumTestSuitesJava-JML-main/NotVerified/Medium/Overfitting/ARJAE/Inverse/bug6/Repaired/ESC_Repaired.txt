@@ -1,0 +1,4 @@
+Inverse.java:8: warning: The prover cannot establish an assertion (LoopInvariant) in method Inverse
+        //@ maintaining (\forall int i; 0 <= i && i < index; x[i] == y[x.length -1 - i]);
+            ^
+1 warning

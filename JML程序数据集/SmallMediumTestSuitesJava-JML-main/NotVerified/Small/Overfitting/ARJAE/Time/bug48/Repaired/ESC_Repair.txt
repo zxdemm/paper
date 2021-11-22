@@ -1,0 +1,19 @@
+Time.java:214: warning: The prover cannot establish an assertion (Postcondition: Time.java:204: ) in method equals
+        return !(this.hour == t.hour && this.minute == t.minute && this.second == t.second); //return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+Time.java:204: warning: Associated declaration: Time.java:214: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+Time.java:214: warning: The prover cannot establish an assertion (Postcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):78: ) in method equals
+        return !(this.hour == t.hour && this.minute == t.minute && this.second == t.second); //return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):78: warning: Associated declaration: Time.java:214: 
+      @     ensures \result;
+            ^
+Time.java:96: warning: The prover cannot establish an assertion (Postcondition: Time.java:93: ) in method getSecond
+        return getHour(); //return second;
+        ^
+Time.java:93: warning: Associated declaration: Time.java:96: 
+    //@ ensures \result == second;
+        ^
+6 warnings

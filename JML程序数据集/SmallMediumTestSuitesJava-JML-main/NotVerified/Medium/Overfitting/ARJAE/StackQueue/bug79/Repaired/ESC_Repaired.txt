@@ -1,0 +1,28 @@
+
+
+StackQueue.java:689: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:634: ) in method driverQueue
+		return output;
+		^
+StackQueue.java:634: warning: Associated declaration: StackQueue.java:689: 
+	   @ 	ensures \result == \old (q.getElem(q.front) / q.getElem(q.front + 1));
+	     	^
+
+
+
+
+StackQueue.java:415: warning: The prover cannot establish an assertion (ArithmeticOperationRange) in method QDivision:  int multiply overflow
+		Q.enter(Q.delete() * Q.delete()); //Q.enter(Q.delete() / Q.delete());
+		                   ^
+
+
+
+
+
+
+StackQueue.java:416: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:410: ) in method QDivision
+		return Q.getElem(Q.getRear() - 1);
+		^
+StackQueue.java:410: warning: Associated declaration: StackQueue.java:416: 
+      	  @ ensures \result == \old (Q.getElem(Q.front) / Q.getElem(Q.front + 1));
+      	    ^
+5 warnings

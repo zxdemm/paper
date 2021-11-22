@@ -1,0 +1,7 @@
+StackQueue.java:84: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:74: ) in method pop
+            			return -1; // throw new IllegalArgumentException();
+            			^
+StackQueue.java:74: warning: Associated declaration: StackQueue.java:84: 
+      	           @ public exceptional_behavior
+      	                    ^
+2 warnings

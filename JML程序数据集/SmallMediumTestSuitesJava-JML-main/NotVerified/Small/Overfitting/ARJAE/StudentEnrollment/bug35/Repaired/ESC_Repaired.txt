@@ -1,0 +1,35 @@
+
+StudentEnrollment.java:323: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:288: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:288: warning: Associated declaration: StudentEnrollment.java:323: 
+      @      public normal_behavior
+                    ^
+
+StudentEnrollment.java:323: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:288: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:288: warning: Associated declaration: StudentEnrollment.java:323: 
+      @      public normal_behavior
+                    ^
+
+StudentEnrollment.java:323: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:288: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:288: warning: Associated declaration: StudentEnrollment.java:323: 
+      @      public normal_behavior
+                    ^
+
+StudentEnrollment.java:323: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StudentEnrollment.java:288: ) in method enrollmentProcess
+	regularEnrollment();
+	                 ^
+StudentEnrollment.java:288: warning: Associated declaration: StudentEnrollment.java:323: 
+      @      public normal_behavior
+                    ^
+StudentEnrollment.java:145: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:142: ) in method validPayment
+        return (0 < passedCredits); // return (0 < payment);
+        ^
+StudentEnrollment.java:142: warning: Associated declaration: StudentEnrollment.java:145: 
+    //@   ensures \result <==> (0 < payment);
+          ^
+10 warnings

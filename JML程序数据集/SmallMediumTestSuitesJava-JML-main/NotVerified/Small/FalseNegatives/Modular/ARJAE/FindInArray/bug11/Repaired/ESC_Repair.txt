@@ -1,0 +1,8 @@
+
+FindInArray.java:74: warning: The prover cannot establish an assertion (Assignable: FindInArray.java:67: ) in method findFirst:  this.key
+	this.key=key;
+	        ^
+FindInArray.java:67: warning: Associated declaration: FindInArray.java:74: 
+    /*@ pure @*/ int findFirst() {	
+        ^
+2 warnings

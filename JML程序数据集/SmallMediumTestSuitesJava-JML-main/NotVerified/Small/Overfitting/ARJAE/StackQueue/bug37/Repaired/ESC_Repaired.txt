@@ -1,0 +1,31 @@
+StackQueue.java:771: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:721: ) in method driverQStack
+		return output;
+		^
+StackQueue.java:721: warning: Associated declaration: StackQueue.java:771: 
+	  @ 	ensures \result == q.peek() / stack.peek();
+	    	^
+StackQueue.java:248: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method peek
+    					queue[i]=queue[i + 1];
+    					     ^
+
+StackQueue.java:251: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  rear
+  				rear--;
+  				    ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:251: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+
+StackQueue.java:252: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:229: ) in method peek
+  				return poll;
+  				^
+StackQueue.java:229: warning: Associated declaration: StackQueue.java:252: 
+      		  @ 	ensures \result == queue[front];
+      		    	^
+
+StackQueue.java:248: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  queue[i]
+    					queue[i]=queue[i + 1];
+    					        ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:248: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+9 warnings

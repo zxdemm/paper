@@ -1,0 +1,1 @@
+This program is still buggy because the "getLowercase_set()" method is a public method, and it can be called with a tester. This program is correct if we only work with the "driver" method, which is not a correct assumption.  

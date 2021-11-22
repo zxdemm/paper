@@ -1,0 +1,29 @@
+
+StudentEnrollment.java:123: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:122: ) in method getFirstName:  this.firstName
+    {	this.firstName=firstName;
+     	              ^
+StudentEnrollment.java:122: warning: Associated declaration: StudentEnrollment.java:123: 
+    public /*@ pure @*/ String getFirstName()
+               ^
+
+StudentEnrollment.java:185: warning: The prover cannot establish an assertion (Assignable: StudentEnrollment.java:177: ) in method lateEnrollment:  tuitionBalance
+        	tuitionBalance = getTuition() + cost;
+        	               ^
+StudentEnrollment.java:177: warning: Associated declaration: StudentEnrollment.java:185: 
+      @   	assignable \nothing;
+          	^
+
+StudentEnrollment.java:179: warning: The prover cannot establish an assertion (Postcondition: StudentEnrollment.java:175: ) in method lateEnrollment
+    public void lateEnrollment() 
+                ^
+StudentEnrollment.java:175: warning: Associated declaration: StudentEnrollment.java:179: 
+      @      public exceptional_behavior
+                    ^
+
+StudentEnrollment.java:179: warning: The prover cannot establish an assertion (InvariantExit: StudentEnrollment.java:12: ) in method lateEnrollment
+    public void lateEnrollment() 
+                ^
+StudentEnrollment.java:12: warning: Associated declaration: StudentEnrollment.java:179: 
+    /*@ public invariant tuitionBalance <= 
+               ^
+8 warnings

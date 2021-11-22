@@ -1,0 +1,21 @@
+FindInArray.java:34: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:31: ) in method getKey
+	return (this.key != 0 ? 1 : 0); // return (this.key == 0 ? 1 : 0); //return this.key;
+	^
+FindInArray.java:31: warning: Associated declaration: FindInArray.java:34: 
+    //@ ensures \result == this.key;
+        ^
+
+FindInArray.java:81: warning: The prover cannot establish an assertion (Assignable: FindInArray.java:78: ) in method isMoreThanOneKey:  this.key
+	this.key=key;
+	        ^
+FindInArray.java:78: warning: Associated declaration: FindInArray.java:81: 
+    /*@ pure @*/ boolean isMoreThanOneKey() {
+        ^
+
+FindInArray.java:82: warning: The prover cannot establish an assertion (Postcondition: FindInArray.java:77: ) in method isMoreThanOneKey
+	return (first != last);
+	^
+FindInArray.java:77: warning: Associated declaration: FindInArray.java:82: 
+    //@ ensures \result <==> findLast() != findFirst();
+        ^
+6 warnings

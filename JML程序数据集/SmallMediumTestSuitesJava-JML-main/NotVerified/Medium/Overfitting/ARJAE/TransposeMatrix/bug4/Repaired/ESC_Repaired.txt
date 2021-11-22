@@ -1,0 +1,4 @@
+TransposeMatrix.java:30: warning: JML internal problem: Double rewriting of ident: c c_1395_1395___33
+                  transpose[c][d] = matrix[d][c];
+                            ^
+1 warning

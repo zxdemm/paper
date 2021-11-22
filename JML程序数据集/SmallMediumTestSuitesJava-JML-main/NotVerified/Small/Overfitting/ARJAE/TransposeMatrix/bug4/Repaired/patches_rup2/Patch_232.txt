@@ -1,0 +1,18 @@
+1 Replace /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 29
+Faulty:
+for (int d=0; d <= m; d++) {
+  transpose[c][d]=matrix[d][c];
+}
+Seed:
+for (int d=0; d < m; d++) {
+  transpose[c][d]=matrix[d][c];
+}
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 16
+Faulty:
+int[][] transpose=new int[n][m];
+Seed:
+n=matrix[0].length;
+**************************************************
+Evaluations: 359
+EstimatedTime: 87661

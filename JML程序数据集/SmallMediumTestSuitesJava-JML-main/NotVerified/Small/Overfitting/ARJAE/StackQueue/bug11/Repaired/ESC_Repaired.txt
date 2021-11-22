@@ -1,0 +1,28 @@
+StackQueue.java:245: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:238: ) in method peek
+            			return queue[front]; 
+            			^
+StackQueue.java:238: warning: Associated declaration: StackQueue.java:245: 
+      		  @ public exceptional_behavior
+      		           ^
+
+StackQueue.java:102: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:98: ) in method peek:  top
+  					return arr[top--];
+  					              ^
+StackQueue.java:98: warning: Associated declaration: StackQueue.java:102: 
+    	   	public /*@ pure @*/ int peek() 
+    	   	           ^
+
+StackQueue.java:102: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:90: ) in method peek
+  					return arr[top--];
+  					^
+StackQueue.java:90: warning: Associated declaration: StackQueue.java:102: 
+      	     	  @ 	ensures \result == arr[top];
+      	     	    	^
+
+StackQueue.java:90: warning: The prover cannot establish an assertion (UndefinedNegativeIndex) in method peek
+      	     	  @ 	ensures \result == arr[top];
+      	     	    	                      ^
+StackQueue.java:102: warning: Associated method exit
+  					return arr[top--];
+  					^
+8 warnings

@@ -1,0 +1,42 @@
+
+
+StackQueue.java:576: warning: The prover cannot establish an assertion (Precondition: StackQueue.java:374: ) in method driverStack
+			output=stackModulus(stack);
+			                   ^
+StackQueue.java:374: warning: Associated declaration: StackQueue.java:576: 
+    	public int stackModulus(Stack stack) 
+    	           ^
+StackQueue.java:367: warning: Precondition conjunct is false: 1 <= stack.top
+    	/*@ requires 1 <= stack.top && stack.getElem(stack.top - 1) != 0;
+    	               ^
+
+
+
+
+StackQueue.java:591: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:528: ) in method driverStack
+		return output;
+		^
+StackQueue.java:528: warning: Associated declaration: StackQueue.java:591: 
+	  @	ensures \result == \old (stack.getElem(stack.top) - stack.getElem(stack.top - 1));
+	   	^
+
+
+
+
+StackQueue.java:591: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:529: ) in method driverStack
+		return output;
+		^
+StackQueue.java:529: warning: Associated declaration: StackQueue.java:591: 
+	  @	ensures stack.top == \old (stack.top - 1);
+	   	^
+
+
+
+
+StackQueue.java:350: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:344: ) in method stackMinus
+		return stack.peek() == 0 ? 1 : 0; //return stack.peek();
+		^
+StackQueue.java:344: warning: Associated declaration: StackQueue.java:350: 
+          @ ensures \result == \old (stack.getElem(stack.top) - stack.getElem(stack.top - 1));
+            ^
+9 warnings

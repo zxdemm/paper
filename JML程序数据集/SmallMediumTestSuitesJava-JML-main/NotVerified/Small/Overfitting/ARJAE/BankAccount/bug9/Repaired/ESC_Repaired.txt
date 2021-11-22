@@ -1,0 +1,27 @@
+BankAccount.java:180: warning: The prover cannot establish an assertion (Precondition: BankAccount.java:307: ) in method checkWithdrawal
+				ATMWithdraw(amount);
+				           ^
+BankAccount.java:307: warning: Associated declaration: BankAccount.java:180: 
+	void ATMWithdraw(int amount)
+	     ^
+BankAccount.java:286: warning: Precondition conjunct is false: amount + ATMpenalty <= Integer.MAX_VALUE
+	//@ requires amount + ATMpenalty <= Integer.MAX_VALUE;
+	                                 ^
+BankAccount.java:296: warning: Precondition conjunct is false: isValid(amount)
+	  //@ requires isValid(amount);
+	                      ^
+
+BankAccount.java:180: warning: The prover cannot establish an assertion (Assignable: BankAccount.java:156: ) in method checkWithdrawal:  \everything
+				ATMWithdraw(amount);
+				           ^
+BankAccount.java:156: warning: Associated declaration: BankAccount.java:180: 
+	//@ requires isValid(amount);
+	    ^
+
+BankAccount.java:180: warning: The prover cannot establish an assertion (Assignable: BankAccount.java:147: ) in method checkWithdrawal:  \everything
+				ATMWithdraw(amount);
+				           ^
+BankAccount.java:147: warning: Associated declaration: BankAccount.java:180: 
+	//@ requires isValid(amount);
+	    ^
+8 warnings

@@ -1,0 +1,8 @@
+
+Time.java:297: warning: The prover cannot establish an assertion (Assignable: Time.java:278: ) in method timeOptions:  minute
+		minute=59;
+		      ^
+Time.java:278: warning: Associated declaration: Time.java:297: 
+      @		assignable \nothing;
+       		^
+2 warnings

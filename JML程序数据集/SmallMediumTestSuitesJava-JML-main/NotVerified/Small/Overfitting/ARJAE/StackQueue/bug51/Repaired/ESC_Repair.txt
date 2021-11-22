@@ -1,0 +1,45 @@
+StackQueue.java:285: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:281: ) in method isEmpty
+ 			else return false;//return (getRear() != getFront()); //return (getRear() == getFront());
+ 			     ^
+StackQueue.java:281: warning: Associated declaration: StackQueue.java:285: 
+   		//@   ensures \result <==>  rear == front;
+   		      ^
+
+StackQueue.java:238: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  rear
+    		{ 	front=rear=0;
+    		  	          ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:238: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+
+
+StackQueue.java:238: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  front
+    		{ 	front=rear=0;
+    		  	     ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:238: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+
+StackQueue.java:238: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  rear
+    		{ 	front=rear=0;
+    		  	          ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:238: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+
+
+StackQueue.java:238: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:237: ) in method peek:  front
+    		{ 	front=rear=0;
+    		  	     ^
+StackQueue.java:237: warning: Associated declaration: StackQueue.java:238: 
+    		public /*@ pure @*/ int peek() 
+    		           ^
+
+
+StackQueue.java:242: warning: The prover cannot establish an assertion (ExceptionalPostcondition: StackQueue.java:227: ) in method peek
+            			throw new IllegalArgumentException(); 
+            			^
+StackQueue.java:227: warning: Associated declaration: StackQueue.java:242: 
+    		/*@ public normal_behavior
+    		           ^
+12 warnings

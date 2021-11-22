@@ -1,0 +1,14 @@
+1 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 30
+Faulty:
+transpose[c][d]=matrix[d][c];
+Seed:
+if (!(d < transpose[c].length && c < transpose.length && c < matrix[d].length && d < matrix.length)) break;
+**************************************************
+2 InsertBefore /home/amirfarhad/Desktop/ProgramAnalysis/codes/result_repair_tools/RunningKelincioneTime/ArjaE/TransposeMatrix/bug4/TransposeMatrix/src/main/java/TransposeMatrix/bug1/TransposeMatrix.java 15
+Faulty:
+n=matrix[0].length;
+Seed:
+m=matrix.length;
+**************************************************
+Evaluations: 551
+EstimatedTime: 138336

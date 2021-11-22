@@ -1,0 +1,22 @@
+Alphabet.java:192: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:189: ) in method getVowel_set
+	return !vowel_set; // return vowel_set;
+	^
+Alphabet.java:189: warning: Associated declaration: Alphabet.java:192: 
+     @   ensures \result == vowel_set; @*/
+         ^
+
+
+Alphabet.java:132: warning: The prover cannot establish an assertion (Assignable: Alphabet.java:116: ) in method setAlphabetic:  vowel
+		case 'U': vowel=true;
+		               ^
+Alphabet.java:116: warning: Associated declaration: Alphabet.java:132: 
+     @    assignable alphabetic_set, alphabetic;
+          ^
+
+Alphabet.java:97: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:93: ) in method setVowel
+   private /*@ spec_public @*/ void setVowel() 
+                                    ^
+Alphabet.java:93: warning: Associated declaration: Alphabet.java:97: 
+     @   ensures vowel_set;
+         ^
+6 warnings

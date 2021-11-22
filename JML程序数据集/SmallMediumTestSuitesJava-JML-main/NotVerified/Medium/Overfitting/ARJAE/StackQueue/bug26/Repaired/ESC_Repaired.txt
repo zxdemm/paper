@@ -1,0 +1,25 @@
+
+
+
+
+StackQueue.java:619: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:502: ) in method driverStack
+		return output;
+		^
+StackQueue.java:502: warning: Associated declaration: StackQueue.java:619: 
+	  @ 	ensures stack.peek() == input && stack.top == \old (stack.top + 1) && \result == 0;
+	    	^
+
+StackQueue.java:152: warning: The prover cannot establish an assertion (Assignable: StackQueue.java:150: ) in method getElem:  top
+        		return arr[top--]; // return arr[i] == 0 ? 1 : 0; // return arr[i]; 
+        		              ^
+StackQueue.java:150: warning: Associated declaration: StackQueue.java:152: 
+    	   	public /*@ pure @*/ int getElem(int i) 
+    	   	           ^
+
+StackQueue.java:152: warning: The prover cannot establish an assertion (Postcondition: StackQueue.java:149: ) in method getElem
+        		return arr[top--]; // return arr[i] == 0 ? 1 : 0; // return arr[i]; 
+        		^
+StackQueue.java:149: warning: Associated declaration: StackQueue.java:152: 
+    	   	//@ 	ensures \result == arr[i];
+    	   	    	^
+6 warnings

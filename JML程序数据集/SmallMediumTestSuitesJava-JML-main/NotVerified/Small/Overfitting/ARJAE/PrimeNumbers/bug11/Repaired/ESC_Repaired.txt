@@ -1,0 +1,6 @@
+
+
+PrimeNumbers.java:27: warning: The prover cannot establish an assertion (LoopInvariantBeforeLoop) in method primeList
+	    @ maintaining (\forall int i; 0 <= i && i < count-1; primeArray[i] < num);
+	      ^
+1 warning

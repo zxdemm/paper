@@ -1,0 +1,1 @@
+The repaired version of the program only checks odd numbers to find prime numbers. The initial buggy program's problem was number "4," which was wrongly considered a prime number, but the bug is fixed correctly by ignoring even number. 

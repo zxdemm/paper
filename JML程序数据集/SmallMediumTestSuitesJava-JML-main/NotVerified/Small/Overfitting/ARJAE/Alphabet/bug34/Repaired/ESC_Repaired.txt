@@ -1,0 +1,14 @@
+Alphabet.java:180: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:177: ) in method getVowel_set
+	return !vowel_set; // return vowel_set;
+	^
+Alphabet.java:177: warning: Associated declaration: Alphabet.java:180: 
+     @   ensures \result == vowel_set; @*/
+         ^
+
+Alphabet.java:97: warning: The prover cannot establish an assertion (Postcondition: Alphabet.java:93: ) in method setVowel
+   private /*@ spec_public @*/ void setVowel() 
+                                    ^
+Alphabet.java:93: warning: Associated declaration: Alphabet.java:97: 
+     @   ensures vowel_set;
+         ^
+4 warnings

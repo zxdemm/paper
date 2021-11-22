@@ -1,0 +1,10 @@
+LinearSearch.java:18: warning: The prover cannot establish an assertion (PossiblyNegativeIndex) in method linearSearch
+  			if (array[c] == search) {
+  			         ^
+LinearSearch.java:29: warning: The prover cannot establish an assertion (Postcondition: LinearSearch.java:6: ) in method linearSearch
+       return location;
+       ^
+LinearSearch.java:6: warning: Associated declaration: LinearSearch.java:29: 
+      //@ ensures \result == -1 ==>  (\forall int i; 0 <= i && i < array.length; array[i] != search);
+          ^
+3 warnings

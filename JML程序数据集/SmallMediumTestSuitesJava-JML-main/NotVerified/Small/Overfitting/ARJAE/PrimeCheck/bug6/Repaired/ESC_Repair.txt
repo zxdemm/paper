@@ -1,0 +1,16 @@
+PrimeCheck.java:6: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:4: ) in method div
+   public static int div(int n, int d) { return (n%d == 0 ? 1 : 0);} // n%d; }
+                                         ^
+PrimeCheck.java:4: warning: Associated declaration: PrimeCheck.java:6: 
+     @    ensures \result == n%d;
+          ^
+PrimeCheck.java:17: warning: The prover cannot establish an assertion (LoopInvariant) in method isPrime
+	//@ maintaining 2 < i ==> \forall int k; 1 < k && k < i; div(a, k) != 0; 
+	    ^
+PrimeCheck.java:21: warning: The prover cannot establish an assertion (Postcondition: PrimeCheck.java:10: ) in method isPrime
+		 return false;
+		 ^
+PrimeCheck.java:10: warning: Associated declaration: PrimeCheck.java:21: 
+   //@ ensures !\result ==> (\exists int k; 1 < k && k <= a/2; div(a,k) == 0); 
+       ^
+5 warnings

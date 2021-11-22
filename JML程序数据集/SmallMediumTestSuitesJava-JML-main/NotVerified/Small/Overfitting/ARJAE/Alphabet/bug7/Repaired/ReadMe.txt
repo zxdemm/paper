@@ -1,0 +1,1 @@
+This program is buggy because the "isLowercase()" does not change the value of "lowercase_set," which can be obtained with the "getLowercase()" method. Thie program is correct if we only use the "driver" method, while these two above methods are public.

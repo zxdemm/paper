@@ -1,0 +1,60 @@
+Time.java:115: warning: The prover cannot establish an assertion (Postcondition: Time.java:112: ) in method convertToSeconds
+         return (hour*60*60 + minute/60 + second);//return (hour*60*60 + minute*60 + second);
+         ^
+Time.java:112: warning: Associated declaration: Time.java:115: 
+    //@ ensures \result == hour*60*60 + minute*60 + second;
+        ^
+
+
+
+
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (Postcondition: Time.java:123: ) in method decr
+    public void decr()
+                ^
+Time.java:123: warning: Associated declaration: Time.java:124: 
+    //@   	ensures convertToSeconds() == \old(convertToSeconds() - 1);
+          	^
+
+
+
+
+
+
+
+Time.java:124: warning: The prover cannot establish an assertion (InvariantExit: Time.java:8: ) in method decr
+    public void decr()
+                ^
+Time.java:8: warning: Associated declaration: Time.java:124: 
+      public invariant 0 <= hour && hour < 24; @*/
+             ^
+Time.java:220: warning: The prover cannot establish an assertion (ExceptionalPostcondition: /home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: ) in method equals
+        Time t=new Time(this.hour,this.minute,this.second); //Time t = (Time) o;
+               ^
+/home/amirfarhad/Desktop/ProgramAnalysis/Tools/openjml/openjml.jar(specs/java/lang/Object.jml):76: warning: Associated declaration: Time.java:220: 
+      @   public normal_behavior
+                 ^
+Time.java:221: warning: The prover cannot establish an assertion (Postcondition: Time.java:212: ) in method equals
+        return this.hour == t.hour && this.minute == t.minute && this.second == t.second;
+        ^
+Time.java:212: warning: Associated declaration: Time.java:221: 
+    /*@    	ensures \result <==> (this.hour == ((Time) o).hour)
+           	^
+Time.java:305: warning: The prover cannot establish an assertion (Postcondition: Time.java:274: ) in method timeOptions
+   		return difference(start, stop);
+   		^
+Time.java:274: warning: Associated declaration: Time.java:305: 
+      @		ensures \result.hour == 0 && \result.minute == 0 && \result.second == 0;
+       		^
+
+
+
+
+
+
+Time.java:174: warning: The prover cannot establish an assertion (Assert) in method timer
+	//@ assert hour == h && minute == m && second == s;
+	    ^
+13 warnings
