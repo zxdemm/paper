@@ -2,7 +2,7 @@
 
 ## 1. 文章解决的问题
 
-基于学习的方法。从过去的修复中学习修复模式，生成类似人类的修复。最终目标是修复程序，但是修复的结果应该是跟人修复类似或一致的。（是否可以被人接受？）Getafix工具
+基于模板的修复。从过去的修复中学习修复模式，生成类似人类的修复。最终目标是修复程序，但是修复的结果应该是跟人修复类似或一致的。（是否可以被人接受？）Getafix工具
 
 三个挑战：
 
@@ -50,7 +50,7 @@
 
    <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211129175739181.png" alt="image-20211129175739181" style="zoom: 67%;" />
 
-   一棵树有标签、值、以及属于它的子节点。不过深度好高！！！
+   一棵树有标签、值、以及属于它的子节点。不过深度好大！！！
 
    比如x = y + 2:  在AST表达式为 x: Name,+: BinEx(y: Name,2: Literal)
 
@@ -88,13 +88,13 @@
 
 #### Learning fix Patterns
 
-这一步是从上一部分的具体编辑中抽象出修复模式，编辑模式可能会有修复变量，来表示树中不同的编辑部分。==而且Getafix关键贡献是给出一种新算法，能够产生编辑模式的层次结构==。如何得到这个层次结构是基于对编辑模式的泛化操作-----反统一（anti-unification）。
+这一步是从上一部分的具体编辑中抽象出修复模式，编辑模式可能会有修复变量，来表示树中不同的编辑部分。==而且Getafix关键贡献是给出一种新算法，能够产生编辑模式的层次结构==。如何得到这个层次结构是基于对编辑模式的泛化操作-----反统一（anti-unification）。	
 
 而且得到的模式尽可能保留具体信息，跟我上次看的那个相反，上次是越抽象越好。
 
 1.  Generalizing Edit Patuerns via Anti-Unification（通过反统一泛化编辑模式）
 
-   * Tree Patterns and Tree Edit Patterns 
+   * ==Tree Patterns and Tree Edit Patterns==
 
      <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211130144018187.png" alt="image-20211130144018187" style="zoom:67%;" />
 
@@ -104,7 +104,7 @@
 
      与树模式类似，编辑模式（Tree Edit Patterns） 也是这样
 
-   * 泛化Tree Patterns（Generalizing Tree Patuerns）
+   * ==泛化Tree Patterns（Generalizing Tree Patuerns）==
 
      这一步是为了将多个Tree Pattern泛化为同一个模式。过程叫做反统一anti-unification。反统一虽然是将tree pattern泛化了，但是它会寻找尽可能保存更多信息的==抽象模式==（之后都叫抽象模式（generalization）
 
@@ -138,7 +138,7 @@
 
      <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211130164825447.png" alt="image-20211130164825447" style="zoom:67%;" />
 
-     这是两个具体的编辑。将二者写成tree pattern：
+     这是两个具体的编辑。将二者写成tree Edit pattern：
 
      <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211130165010169.png" alt="image-20211130165010169" style="zoom:67%;" />
 
@@ -150,13 +150,86 @@
 
      ![image-20211130172603387](C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211130172603387.png)
 
-     然后Getafix尽可能填充没有被修改的节点。
+     然后Getafix尽可能填充没有被修改的节点。而且填充后还要用反模式
 
      <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211130172800343.png" alt="image-20211130172800343" style="zoom:67%;" />
 
-2. 编辑模板的层次聚类（Hierarchical Clustering of Edit Patuerns）
+2. 编辑模板的层次聚类（Hierarchical Clustering of Edit Patuerns）：树结构
 
    大致思想就是使用层次聚类的算法来推导层次结构。从具体的编辑开始，每次组合成对的编辑，直到所有的编辑合并成一个编辑模式。由算法选择一对编辑模式。使得它们的反统一的抽象模式损失的信息最少。
+
+   <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211201141023448.png" alt="image-20211201141023448" style="zoom:80%;" />
+
+   该例子是从四个具体的编辑中提取出模板的
+
+   * ==聚类算法==：共四步，直到将模板泛化为一个，初始集合w是最初的编辑模式，没有任何模式变量（hole）
+
+     1. 从w中选择两个编辑模式$$e_1 e_2$$
+     2. 泛化这两个模式，得到$$e_3$$
+     3. 将这两个从w中去除
+     4. 将$$e_3设置为e_1和e_2$$的父节点（在层次结构中）
+
+   * 合并的顺序：如何在w中选择两个编辑模式？因为最大限度地保留反统一步骤中的具体信息
+
+     首先定义偏序：<img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211201145302342.png" alt="image-20211201145302342" style="zoom: 67%;" />
+
+     举例：<img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211201145332662.png" alt="image-20211201145332662" style="zoom:67%;" />
+
+     <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211201145351420.png" alt="image-20211201145351420" style="zoom:67%;" />
+
+     当然有一系列条件，这里就不再多说了
+
+   * Approximations for Efficiency：效率的近似：为了将Getafix扩展到大量的编辑，必须提高它的效率
+
+     使用 the nearest-neighbor-chain algorithm（1982年）来减少时间复杂度。因为合并一次后，大部分未合并的编辑是不会改变的，所以用这个链式算法来简化复杂度。http://blog.sina.com.cn/s/blog_48f842f80101q99i.html
+
+3.  编辑模式的上下文
+
+    分两种：代码上下文、错误上下文
+
+    代码上下文很常见，错误上下文指的是哪个hole出现错误
+
+    <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211201155046693.png" alt="image-20211201155046693" style="zoom:80%;" />
+
+
+
+#### apply and ranking fix patterns
+
+这个步骤主要解决（1）哪些模式适合给定的bug程序（2）模式产生的哪些修复提供给工作人员
+
+1. Apply Edit patterns to buggy code
+
+   给定tree pattern p（包含before和after）和bug源程序的树 t。匹配步骤如下：
+   
+   （1）在t中找到匹配p的before的子树（匹配规则就是改变p中的hole使得它能变成t）
+   
+   （2）将p中before 和after上的hole全部实例化
+   
+   （3）将t中的子树替换为p中after的部分
+   
+2. Ranking Fix Candidates
+
+   用一个三元组（b,p,z）来表示一个修复。b是bug，p是修复模式，z是fix 模式应用于警告位置的哪一行。也就是说，bug位置是用静态分析工具检测的
+
+   1. Prevalence score：当前的修复模式包含的具体的bug修复越多得分就越高。
+   
+      <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211202141158265.png" alt="image-20211202141158265" style="zoom:80%;" />
+   
+      H是一个人类手写修复的集合，p就是从H中学习来的
+   
+   2. Location score：当前修复模板在z处修复位置的总出现次数占比来比较好坏
+   
+      <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211202141719322.png" alt="image-20211202141719322" style="zoom:80%;" />
+   
+   3. Specialization score：
+   
+      <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20211202142531904.png" alt="image-20211202142531904" style="zoom:80%;" />
+   
+      拥有越多的上下文信息的模板能得到更多的分数
+   
+   然后将三个数相乘，得分越大的，排名越高
+   
+   
 
 ## 3. 核心知识点或名词定义
 
