@@ -87,10 +87,10 @@
       1. 存在整数溢出的语句（int result = a + b）
       2. 检测故障的SMT公式（(assert (= resSymbolic (+varAsymbolic varBsymbolic)))）
       3. 用于检测这个对应故障的检查器的故障ID（ID-Integer_Overflow_Fault）
-      4. 溢出的符号变量（resSymbolic）
+      4. 用于检测整数溢出的符号变量（resSymbolic）
       5. 整数溢出可能依赖的其他符号变量varAsymbolic
       
-   3. 选择约束的变量（到这一步，还没有整数溢出检测）
+   3. 选择约束的变量
    
       根据检测到的语句类型，选择SMT约束变量（result、潜在的变量a，b），其中result会被进一步约束，这是为了之后可以检测生成的修复是否删除了整数溢出的故障
    
@@ -127,7 +127,6 @@
 1. Codan只能支持C、C++，
 2. 无法处理复杂的C语言结构
 3. 面对循环与递归的问题时，IntRepair会产生错误的报告
-4. 
 
 ## 6. 改进的思路
 

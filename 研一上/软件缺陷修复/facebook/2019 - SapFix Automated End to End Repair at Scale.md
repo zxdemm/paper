@@ -18,7 +18,7 @@ $$b_{rev}:$$修复的文件        b_file:错误的文件     b_line:错误的�
 
 6~7使用模板修复和突变修复。
 
-repro_crash(p,mid)指的是用saoienz能不能再次产生一次崩溃，得到的一个mid与传入的mid一致。
+repro_crash(p,mid)指的是能不能再次产生一次崩溃（相同的测试用例或运行情况），得到的一个mid与传入的mid一致。
 
 如果没有，那么用sapienz_repro_mid正常运行sapienz，看一下是否能产生mid。
 
