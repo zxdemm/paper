@@ -82,7 +82,7 @@
    
       给定一个预期值，然后和一个要进行断言值的位置。分三步：获取要断言的输入与输出元素、获取断言值、生成断言语句。
    
-      难点：如何获取要断言的输入与输出元素（也就是目标元素）？
+      难点：如何获取要断言的输入与输出元素（也就是目标元素）？以下就是方法，保存到Map中
    
       <img src="C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20220311153317193.png" alt="image-20220311153317193" style="zoom:80%;" />
       
@@ -90,7 +90,13 @@
       
       * 补丁修改的方法叫delta-related method（$$m_\delta$$）
       
-      在the Test-Case-Instrumented Version 中，每一个$$m_\delta$$的父类都有一个哈希表。
+      在the Test-Case-Instrumented Version 中，每一个$$m_\delta$$的父类都有一个哈希表。表用来保存输入/输出元素。当保存元素的其他信息不可用时，则用null。
+      
+      ==如何将测试方法完善==
+      
+      给定oracle的预期值，output的位置，test-case-instrumented version created
+      
+      ![image-20220314184638689](C:\Users\HDULAB601\AppData\Roaming\Typora\typora-user-images\image-20220314184638689.png)
 
 ## 3. 核心知识点或名词定义
 
