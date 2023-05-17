@@ -1,0 +1,274 @@
+\begin{thebibliography}{50}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Afzal et~al(2019)Afzal, Motwani, Stolee, Brun, and Le~Goues}]{bib46}
+Afzal A, Motwani M, Stolee KT, et~al (2019) Sosrepair: Expressive semantic
+  search for real-world program repair. IEEE Transactions on Software
+  Engineering 47(10):2162--2181
+
+\bibitem[{Chen et~al(2017)Chen, Pei, and Furia}]{bib47}
+Chen L, Pei Y, Furia CA (2017) Contract-based program repair without the
+  contracts. In: 2017 32nd IEEE/ACM International Conference on Automated
+  Software Engineering (ASE), IEEE, pp 637--647
+
+\bibitem[{Chen et~al(2020)Chen, Pei, and Furia}]{bib48}
+Chen L, Pei Y, Furia CA (2020) Contract-based program repair without the
+  contracts: An extended study. IEEE Transactions on Software Engineering
+  47(12):2841--2857
+
+\bibitem[{Durieux et~al(2017)Durieux, Cornu, Seinturier, and Monperrus}]{bib32}
+Durieux T, Cornu B, Seinturier L, et~al (2017) Dynamic patch generation for
+  null pointer exceptions using metaprogramming. In: 2017 IEEE 24th
+  International Conference on Software Analysis, Evolution and Reengineering
+  (SANER), IEEE, pp 349--358
+
+\bibitem[{Falleri et~al(2014)Falleri, Morandat, Blanc, Martinez, and
+  Monperrus}]{bib30}
+Falleri JR, Morandat F, Blanc X, et~al (2014) Fine-grained and accurate source
+  code differencing. In: Proceedings of the 29th ACM/IEEE international
+  conference on Automated software engineering, pp 313--324
+
+\bibitem[{Forrest et~al(2009)Forrest, Nguyen, Weimer, and Le~Goues}]{bib1}
+Forrest S, Nguyen T, Weimer W, et~al (2009) A genetic programming approach to
+  automated software repair. In: Proceedings of the 11th Annual conference on
+  Genetic and evolutionary computation, pp 947--954
+
+\bibitem[{Fraser and Arcuri(2011)}]{bib70}
+Fraser G, Arcuri A (2011) Evosuite: automatic test suite generation for
+  object-oriented software. In: Proceedings of the 19th ACM SIGSOFT symposium
+  and the 13th European conference on Foundations of software engineering, pp
+  416--419
+
+\bibitem[{Gao et~al(2016)Gao, Wang, and Li}]{bib27}
+Gao F, Wang L, Li X (2016) Bovinspector: automatic inspection and repair of
+  buffer overflow vulnerabilities. In: Proceedings of the 31st IEEE/ACM
+  International Conference on Automated Software Engineering, pp 786--791
+
+\bibitem[{Gao et~al(2015)Gao, Xiong, Mi, Zhang, Yang, Zhou, Xie, and
+  Mei}]{bib28}
+Gao Q, Xiong Y, Mi Y, et~al (2015) Safe memory-leak fixing for c programs. In:
+  2015 IEEE/ACM 37th IEEE International Conference on Software Engineering,
+  IEEE, pp 459--470
+
+\bibitem[{Ghanbari et~al(2019)Ghanbari, Benton, and Zhang}]{bib74}
+Ghanbari A, Benton S, Zhang L (2019) Practical program repair via bytecode
+  mutation. In: Proceedings of the 28th ACM SIGSOFT International Symposium on
+  Software Testing and Analysis, pp 19--30
+
+\bibitem[{Hu et~al(2019)Hu, Ahmed, Mechtaev, Leong, and Roychoudhury}]{bib22}
+Hu Y, Ahmed UZ, Mechtaev S, et~al (2019) Re-factoring based program repair
+  applied to programming assignments. In: 2019 34th IEEE/ACM International
+  Conference on Automated Software Engineering (ASE), IEEE, pp 388--398
+
+\bibitem[{Hua et~al(2018)Hua, Zhang, Wang, and Khurshid}]{bib31}
+Hua J, Zhang M, Wang K, et~al (2018) Towards practical program repair with
+  on-demand candidate generation. In: Proceedings of the 40th international
+  conference on software engineering, pp 12--23
+
+\bibitem[{Ji et~al(2016)Ji, Chen, Mao, and Yi}]{bib18}
+Ji T, Chen L, Mao X, et~al (2016) Automated program repair by using similar
+  code containing fix ingredients. In: 2016 IEEE 40th Annual Computer Software
+  and Applications Conference (COMPSAC), IEEE, pp 197--202
+
+\bibitem[{Jiang et~al(2018)Jiang, Xiong, Zhang, Gao, and Chen}]{bib21}
+Jiang J, Xiong Y, Zhang H, et~al (2018) Shaping program repair space with
+  existing patches and similar code. In: Proceedings of the 27th ACM SIGSOFT
+  international symposium on software testing and analysis, pp 298--309
+
+\bibitem[{Just et~al(2014)Just, Jalali, and Ernst}]{bib49}
+Just R, Jalali D, Ernst MD (2014) Defects4j: A database of existing faults to
+  enable controlled testing studies for java programs. In: Proceedings of the
+  2014 international symposium on software testing and analysis, pp 437--440
+
+\bibitem[{Ke et~al(2015)Ke, Stolee, Le~Goues, and Brun}]{bib45}
+Ke Y, Stolee KT, Le~Goues C, et~al (2015) Repairing programs with semantic code
+  search (t). In: 2015 30th IEEE/ACM International Conference on Automated
+  Software Engineering (ASE), IEEE, pp 295--306
+
+\bibitem[{Kim et~al(2013)Kim, Nam, Song, and Kim}]{bib9}
+Kim D, Nam J, Song J, et~al (2013) Automatic patch generation learned from
+  human-written patches. In: 2013 35th International Conference on Software
+  Engineering (ICSE), IEEE, pp 802--811
+
+\bibitem[{Kim and Kim(2019)}]{bib17}
+Kim J, Kim S (2019) Automatic patch generation with context-based change
+  application. Empirical Software Engineering 24(6):4071--4106
+
+\bibitem[{Koyuncu et~al(2019)Koyuncu, Liu, Bissyandé, Kim, Monperrus, Klein,
+  and Le~Traon}]{bib24}
+Koyuncu A, Liu K, Bissyandé TF, et~al (2019) ifixr: Bug report driven program
+  repair. In: Proceedings of the 2019 27th ACM joint meeting on european
+  software engineering conference and symposium on the foundations of software
+  engineering, pp 314--325
+
+\bibitem[{Le et~al(2016)Le, Lo, and Le~Goues}]{bib15}
+Le XBD, Lo D, Le~Goues C (2016) History driven program repair. In: 2016 IEEE
+  23rd international conference on software analysis, evolution, and
+  reengineering (SANER), IEEE, pp 213--224
+
+\bibitem[{Le et~al(2017)Le, Chu, Lo, Le~Goues, and Visser}]{bib41}
+Le XBD, Chu DH, Lo D, et~al (2017) S3: syntax-and semantic-guided repair
+  synthesis via programming by examples. In: Proceedings of the 2017 11th Joint
+  Meeting on Foundations of Software Engineering, pp 593--604
+
+\bibitem[{Lee et~al(2018)Lee, Hong, and Oh}]{bib43}
+Lee J, Hong S, Oh H (2018) Memfix: static analysis-based repair of memory
+  deallocation errors for c. In: Proceedings of the 2018 26th ACM Joint Meeting
+  on European Software Engineering Conference and Symposium on the Foundations
+  of Software Engineering, pp 95--106
+
+\bibitem[{Marginean et~al(2019)Marginean, Bader, Chandra, Harman, Jia, Mao,
+  Mols, and Scott}]{bib25}
+Marginean A, Bader J, Chandra S, et~al (2019) Sapfix: Automated end-to-end
+  repair at scale. In: 2019 IEEE/ACM 41st International Conference on Software
+  Engineering: Software Engineering in Practice (ICSE-SEIP), IEEE, pp 269--278
+
+\bibitem[{Martinez and Monperrus(2016)}]{bib65}
+Martinez M, Monperrus M (2016) Astor: A program repair library for java. In:
+  Proceedings of the 25th International Symposium on Software Testing and
+  Analysis, pp 441--444
+
+\bibitem[{Martinez et~al(2017)Martinez, Durieux, Sommerard, Xuan, and
+  Monperrus}]{bib69}
+Martinez M, Durieux T, Sommerard R, et~al (2017) Automatic repair of real bugs
+  in java: A large-scale experiment on the defects4j dataset. Empirical
+  Software Engineering 22:1936--1964
+
+\bibitem[{Mechtaev et~al(2015)Mechtaev, Yi, and Roychoudhury}]{bib37}
+Mechtaev S, Yi J, Roychoudhury A (2015) Directfix: Looking for simple program
+  repairs. In: 2015 IEEE/ACM 37th IEEE International Conference on Software
+  Engineering, IEEE, pp 448--458
+
+\bibitem[{Mechtaev et~al(2016)Mechtaev, Yi, and Roychoudhury}]{bib38}
+Mechtaev S, Yi J, Roychoudhury A (2016) Angelix: Scalable multiline program
+  patch synthesis via symbolic analysis. In: Proceedings of the 38th
+  international conference on software engineering, pp 691--701
+
+\bibitem[{Mechtaev et~al(2018{\natexlab{a}})Mechtaev, Gao, Tan, and
+  Roychoudhury}]{bib33}
+Mechtaev S, Gao X, Tan SH, et~al (2018{\natexlab{a}}) Test-equivalence analysis
+  for automatic patch generation. ACM Transactions on Software Engineering and
+  Methodology (TOSEM) 27(4):1--37
+
+\bibitem[{Mechtaev et~al(2018{\natexlab{b}})Mechtaev, Nguyen, Noller, Grunske,
+  and Roychoudhury}]{bib42}
+Mechtaev S, Nguyen MD, Noller Y, et~al (2018{\natexlab{b}}) Semantic program
+  repair using a reference implementation. In: Proceedings of the 40th
+  International Conference on Software Engineering, pp 129--139
+
+\bibitem[{Nguyen et~al(2013)Nguyen, Qi, Roychoudhury, and Chandra}]{bib36}
+Nguyen HDT, Qi D, Roychoudhury A, et~al (2013) Semfix: Program repair via
+  semantic analysis. In: 2013 35th International Conference on Software
+  Engineering (ICSE), IEEE, pp 772--781
+
+\bibitem[{Nilizadeh et~al(2021)Nilizadeh, Leavens, Le, Păsăreanu, and
+  Cok}]{bib7}
+Nilizadeh A, Leavens GT, Le XBD, et~al (2021) Exploring true test overfitting
+  in dynamic automated program repair using formal methods. In: 2021 14th IEEE
+  Conference on Software Testing, Verification and Validation (ICST), IEEE, pp
+  229--240
+
+\bibitem[{Qi et~al(2015)Qi, Long, Achour, and Rinard}]{bib67}
+Qi Z, Long F, Achour S, et~al (2015) An analysis of patch plausibility and
+  correctness for generate-and-validate patch generation systems. In:
+  Proceedings of the 2015 International Symposium on Software Testing and
+  Analysis, pp 24--36
+
+\bibitem[{Rothenberg and Grumberg(2016)}]{bib39}
+Rothenberg BC, Grumberg O (2016) Sound and complete mutation-based program
+  repair. In: FM 2016: Formal Methods: 21st International Symposium, Limassol,
+  Cyprus, November 9-11, 2016, Proceedings 21, Springer, pp 593--611
+
+\bibitem[{Saha et~al(2019)}]{bib34}
+Saha S, et~al (2019) Harnessing evolution for multi-hunk program repair. In:
+  2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE),
+  IEEE, pp 13--24
+
+\bibitem[{Tan et~al(2016)Tan, Yoshida, Prasad, and Roychoudhury}]{bib35}
+Tan SH, Yoshida H, Prasad MR, et~al (2016) Anti-patterns in search-based
+  program repair. In: Proceedings of the 2016 24th ACM SIGSOFT International
+  Symposium on Foundations of Software Engineering, pp 727--738
+
+\bibitem[{Tian and Ray(2017)}]{bib26}
+Tian Y, Ray B (2017) Automatically diagnosing and repairing error handling bugs
+  in c. In: Proceedings of the 2017 11th joint meeting on foundations of
+  software engineering, pp 752--762
+
+\bibitem[{van Tonder and Goues(2018)}]{bib44}
+van Tonder R, Goues CL (2018) Static automated program repair for heap
+  properties. In: Proceedings of the 40th International Conference on Software
+  Engineering, pp 151--162
+
+\bibitem[{Wang et~al(2017)Wang, Chen, Shen, and Zhong}]{bib19}
+Wang Y, Chen Y, Shen B, et~al (2017) Crsearcher: Searching code database for
+  repairing bugs. In: Proceedings of the 9th Asia-Pacific Symposium on
+  Internetware, pp 1--6
+
+\bibitem[{Wen et~al(2018)Wen, Chen, Wu, Hao, and Cheung}]{bib16}
+Wen M, Chen J, Wu R, et~al (2018) Context-aware patch generation for better
+  automated program repair. In: Proceedings of the 40th international
+  conference on software engineering, pp 1--11
+
+\bibitem[{Xin and Reiss(2017{\natexlab{a}})}]{bib5}
+Xin Q, Reiss SP (2017{\natexlab{a}}) Identifying test-suite-overfitted patches
+  through test case generation. In: Proceedings of the 26th ACM SIGSOFT
+  international symposium on software testing and analysis, pp 226--236
+
+\bibitem[{Xin and Reiss(2017{\natexlab{b}})}]{bib20}
+Xin Q, Reiss SP (2017{\natexlab{b}}) Leveraging syntax-related code for
+  automated program repair. In: 2017 32nd IEEE/ACM International Conference on
+  Automated Software Engineering (ASE), IEEE, pp 660--670
+
+\bibitem[{Xiong et~al(2017)Xiong, Wang, Yan, Zhang, Han, Huang, and
+  Zhang}]{bib66}
+Xiong Y, Wang J, Yan R, et~al (2017) Precise condition synthesis for program
+  repair. In: 2017 IEEE/ACM 39th International Conference on Software
+  Engineering (ICSE), IEEE, pp 416--426
+
+\bibitem[{Xiong et~al(2018)Xiong, Liu, Zeng, Zhang, and Huang}]{bib8}
+Xiong Y, Liu X, Zeng M, et~al (2018) Identifying patch correctness in
+  test-based program repair. In: Proceedings of the 40th international
+  conference on software engineering, pp 789--799
+
+\bibitem[{Xuan et~al(2016)Xuan, Martinez, Demarco, Clement, Marcote, Durieux,
+  Le~Berre, and Monperrus}]{bib40}
+Xuan J, Martinez M, Demarco F, et~al (2016) Nopol: Automatic repair of
+  conditional statement bugs in java programs. IEEE Transactions on Software
+  Engineering 43(1):34--55
+
+\bibitem[{Yan et~al(2016)Yan, Sui, Chen, and Xue}]{bib29}
+Yan H, Sui Y, Chen S, et~al (2016) Automated memory leak fixing on value-flow
+  slices for c programs. In: Proceedings of the 31st Annual ACM Symposium on
+  Applied Computing, pp 1386--1393
+
+\bibitem[{Yang and Yang(2020)}]{bib6}
+Yang B, Yang J (2020) Exploring the differences between plausible and correct
+  patches at fine-grained level. In: 2020 IEEE 2nd International Workshop on
+  Intelligent Bug Fixing (IBF), IEEE, pp 1--8
+
+\bibitem[{Yang et~al(2017)Yang, Zhikhartsev, Liu, and Tan}]{bib10}
+Yang J, Zhikhartsev A, Liu Y, et~al (2017) Better test cases for better
+  automated program repair. In: Proceedings of the 2017 11th joint meeting on
+  foundations of software engineering, pp 831--841
+
+\bibitem[{Yu et~al(2019)Yu, Martinez, Danglot, Durieux, and Monperrus}]{bib4}
+Yu Z, Martinez M, Danglot B, et~al (2019) Alleviating patch overfitting with
+  automatic test generation: a study of feasibility and effectiveness for the
+  nopol repair system. Empirical Software Engineering 24:33--67
+
+\bibitem[{Yuan and Banzhaf(2018)}]{bib11}
+Yuan Y, Banzhaf W (2018) Arja: Automated repair of java programs via
+  multi-objective genetic programming. IEEE Transactions on software
+  engineering 46(10):1040--1067
+
+\bibitem[{Yuan and Banzhaf(2020)}]{bib14}
+Yuan Y, Banzhaf W (2020) Toward better evolutionary program repair: An
+  integrated approach. ACM Transactions on Software Engineering and Methodology
+  (TOSEM) 29(1):1--53
+
+\end{thebibliography}

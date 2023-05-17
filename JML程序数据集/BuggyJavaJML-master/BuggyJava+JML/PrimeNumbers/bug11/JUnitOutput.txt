@@ -1,6 +1,0 @@
-test(JUnitPrimeNumbers): 747
-test1(JUnitPrimeNumbers): 229
-test2(JUnitPrimeNumbers): null
-test3(JUnitPrimeNumbers): null
-test4(JUnitPrimeNumbers): null
-false

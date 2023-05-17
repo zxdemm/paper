@@ -1,2 +1,0 @@
-test5(JUnitGCD): expected:<-1> but was:<0>
-false
