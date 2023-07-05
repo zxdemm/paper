@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  4 FEB 2023 21:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  11 JUN 2023 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,22 +871,22 @@ Overfull \vbox (1.44444pt too high) has occurred while \output is active []
 
 
 [5]
-<fig1.png, id=284, 361.85187pt x 90.83937pt>
+<fig1.png, id=285, 361.85187pt x 90.83937pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 134.
 (pdftex.def)             Requested size: 338.58778pt x 84.99951pt.
-<fig2.png, id=286, 358.33875pt x 100.375pt>
+<fig2.png, id=287, 358.33875pt x 100.375pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
 Package pdftex.def Info: fig2.png  used on input line 141.
 (pdftex.def)             Requested size: 338.58778pt x 94.84872pt.
-<fig3.png, id=287, 223.83624pt x 91.34125pt>
+<fig3.png, id=288, 223.83624pt x 91.34125pt>
 File: fig3.png Graphic file (type png)
 <use fig3.png>
 Package pdftex.def Info: fig3.png  used on input line 148.
 (pdftex.def)             Requested size: 169.29388pt x 69.08556pt.
-<fig4.png, id=288, 230.8625pt x 91.34125pt>
+<fig4.png, id=289, 230.8625pt x 91.34125pt>
 File: fig4.png Graphic file (type png)
 <use fig4.png>
 Package pdftex.def Info: fig4.png  used on input line 153.
@@ -1147,7 +1147,7 @@ xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/202
 2/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/texlive/2022/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti10.pfb><d:/texlive/2022/texmf-dist/fonts/
 type1/public/cm-super/sfrm1000.pfb>
-Output written on manualscript.pdf (27 pages, 489829 bytes).
+Output written on manualscript.pdf (27 pages, 489914 bytes).
 PDF statistics:
  578 PDF objects out of 1000 (max. 8388607)
  486 compressed objects within 5 object streams
